@@ -1,0 +1,24 @@
+.season {
+    margin: 0 auto;
+    background-color: #3871a2;
+    width: 50%;
+}
+.season-info {
+    margin-top: 40px;
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.season-card {
+    background-color: #203954;
+    padding: 24px;
+    text-align: center;
+}
+.season-card .season-title,
+.season-card .season-date{
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+}

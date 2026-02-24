@@ -1,0 +1,8 @@
+.anime-list {
+    margin-top: 40px;
+}
+.anime-list .anime-list__title {
+    color: #FFF;
+    font-size: 30px;
+    font-weight: bold;
+}
