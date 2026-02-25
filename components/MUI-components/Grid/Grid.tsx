@@ -5,6 +5,11 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import Card from "../Card/Card";
+import {AnimeListType} from "@/types/AnimeListType";
+
+interface AnimeListProps {
+    animeLists: AnimeListType[];
+}
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: '#fff',
@@ -17,13 +22,14 @@ const Item = styled(Paper)(({ theme }) => ({
     }),
 }));
 
-export default function ResponsiveGrid() {
+export default function ResponsiveGrid({animeLists}: AnimeListProps) {
+
     return (
         <Box sx={{ flexGrow: 1 }}>
-            <Grid container spacing={{ xs: 2, md: 2 }} columns={{ xs: 4, sm: 8, md: 20 }}>
-                {Array.from(Array(30)).map((_, index) => (
+            <Grid container spacing={{ xs: 2, md: 5 }} columns={{ xs: 4, sm: 8, md: 12 }}>
+                {animeLists.map((anime, index) => (
                     <Grid key={index} size={{ xs: 2, sm: 4, md: 4 }}>
-                        <Card/>
+                        <Card anime={anime}/>
                     </Grid>
                 ))}
             </Grid>
