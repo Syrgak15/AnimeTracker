@@ -9,7 +9,7 @@ interface AnimeListProps {
     anime: AnimeListType;
 }
 
-export default function     ImgMediaCard({anime}: AnimeListProps) {
+export default function ImgMediaCard({anime}: AnimeListProps) {
     return (
         <Card sx={{ maxWidth: 345, height: 600 }}>
             <CardMedia

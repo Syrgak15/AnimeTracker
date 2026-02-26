@@ -1,10 +1,11 @@
 import SearchBar from "@/components/MUI-components/SearchBar/SearchBar";
 import "./style.css"
+import { SearchProps } from "@/types/SearchType";
 
-export default function Search(){
+export default function Search({onSearch}: SearchProps) {
     return (
         <div className="search">
-            <SearchBar/>
+            <SearchBar onSearch={onSearch}/>
         </div>
     )
 }
