@@ -1,11 +1,15 @@
-import SearchBar from "@/components/MUI-components/SearchBar/SearchBar";
+import SearchBar from "@/components/MUI-components/SearchBar/SearchBar"
 import "./style.css"
-import { SearchProps } from "@/types/SearchType";
+import {AnimeListType} from "@/types/AnimeListType";
 
-export default function Search({onSearch}: SearchProps) {
+interface AnimeListProps {
+    animeLists: AnimeListType[];
+}
+
+export default function Search({animeLists}: {animeLists: AnimeListProps}) {
     return (
         <div className="search">
-            <SearchBar onSearch={onSearch}/>
+            <SearchBar animeLists={animeLists}/>
         </div>
     )
 }
