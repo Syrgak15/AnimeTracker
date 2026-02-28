@@ -6,7 +6,7 @@ interface AnimeListProps {
     animeLists: AnimeListType[];
 }
 
-export default function Search({animeLists}: {animeLists: AnimeListProps}) {
+export default function Search({animeLists}: AnimeListProps) {
     return (
         <div className="search">
             <SearchBar animeLists={animeLists}/>

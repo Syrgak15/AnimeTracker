@@ -20,7 +20,7 @@ async function getAnimeLists() {
 
 export default async function AnimeList() {
 
-    const animeLists = await getAnimeLists() ?? [];
+    const animeLists = await getAnimeLists();
 
     return (
         <>

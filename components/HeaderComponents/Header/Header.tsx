@@ -7,9 +7,7 @@ import './style.css'
 export default function Header() {
 
     const headerLinks = [
-        { name: 'AnimeTracker', href: '/' },
-        { name: 'Current Season', href: '/current-season' },
-        { name: 'Upcoming Episodes', href: '/upcoming-episodes' },
+        { name: 'AnimeTracker', href: '/' }
     ]
 
     return (
