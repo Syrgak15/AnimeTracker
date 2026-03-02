@@ -2,7 +2,7 @@
     margin-top: 40px;
 }
 .anime-list__container {
-    width: 1000px;
+    width: auto;
 }
 .anime-list__title {
     color: #FFF;

@@ -1,12 +1,14 @@
 "use client"
 
-import * as React from 'react';
+import React, { Dispatch, SetStateAction } from 'react';
 import "./style.css"
-import {useState} from "react";
 
-export default function Tabs() {
+interface ChildProps {
+    setActiveTab: Dispatch<SetStateAction<number>>;
+    activeTab: number;
+}
 
-    const [activeTab, setActiveTab] = useState<number>(0);
+export default function Tabs({setActiveTab, activeTab}:ChildProps) {
 
     return (
         <div className="tabs">

@@ -32,7 +32,7 @@ export default function ResponsiveGrid({animeLists}: AnimeListProps) {
                 columns={{ xs: 4, sm: 8, md: 12 }}
             >
                 {animeLists?.map((anime, index) => (
-                        <Grid key={index} size={{ xs: 2, sm: 4, md: 4 }}>
+                        <Grid key={index} size={{ xs: 2, sm: 4, md: 4, lg: 12/5 }} >
                             <Card anime={anime} />
                         </Grid>
                 ))}

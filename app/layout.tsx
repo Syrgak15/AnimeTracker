@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-      <Container suppressHydrationWarning>
+      <Container suppressHydrationWarning maxWidth="xl">
         <Header/>
           {children}
           <Footer/>

@@ -11,66 +11,99 @@ import Tabs from "@/components/MainPageComponents/Tabs/Tabs";
 
 interface AnimeListProps {
     animeLists: AnimeListType[];
+    limitedAnimeLists: AnimeListType[];
 }
 
-export default function CustomizedInputBase({ animeLists }: AnimeListProps) {
+
+export default function CustomizedInputBase({ animeLists, limitedAnimeLists }: AnimeListProps) {
 
     const [currentValue, setCurrentValue] = useState("");
-    const [filteredAnime, setFilteredAnime] = useState<AnimeListType[]>(animeLists);
+    const [filteredLimitedAnimeList, setFilteredLimitedAnimeList] = useState<AnimeListType[]>(limitedAnimeLists);
+    const [filteredAnimeList, setFilteredAnimeList] = useState<AnimeListType[]>(animeLists);
+    const [activeTab, setActiveTab] = useState<number>(0);
 
     const handleChange = (e: any) => {
         const value = e.target.value;
         setCurrentValue(value);
 
-        if(currentValue) {
-            const filteredAnimeList = animeLists.filter((anime) =>
+        if(activeTab === 0) {
+            const filteredList = animeLists.filter((anime) =>
                 anime.title.toLowerCase().includes(value.toLowerCase())
             );
-            setFilteredAnime(filteredAnimeList);
+            setFilteredAnimeList(filteredList);
         } else {
-            setFilteredAnime(animeLists);
+            setFilteredAnimeList(animeLists);
         }
+
+        if(activeTab === 1) {
+            const filteredLimitedList = limitedAnimeLists.filter((anime) =>
+                anime.title.toLowerCase().includes(value.toLowerCase())
+            );
+            setFilteredLimitedAnimeList(filteredLimitedList);
+        } else {
+            setFilteredLimitedAnimeList(limitedAnimeLists);
+        }
+
+
     }
-    return (
-        <>
-            <div className="anime-list">
-                <div className="anime-list__container">
-                    <Paper
-                        component="form"
-                        sx={{
-                            p: "6px 8px",
-                            display: "flex",
-                            alignItems: "center",
-                            gap: 1,
-                            width: 500,
-                            backgroundColor: "#3871a2",
-                            margin: "0 auto"
-                        }}
-                    >
-                        <InputBase
-                            value={currentValue}
-                            onChange={(e) => handleChange(e)}
-                            sx={{ml: 1, flex: 1, color: "#FFF"}}
-                            placeholder="Search current season anime"
-                            inputProps={{"aria-label": "search anime"}}
-                        />
-                    </Paper>
 
-                    <Box sx={{display: "flex", justifyContent: "center"}}>
-                        <Tabs/>
-                    </Box>
+    const tabsConfig = [
+        {
+            title: "Popular This Season",
+            data: filteredAnimeList
+        },
+        {
+            title: "Upcoming Episodes",
+            data: filteredLimitedAnimeList
+        }
+    ];
 
-                    <div className="anime-list__title" style={{marginTop: 16}}>
-                        <WhatshotIcon className="anime-list__title-icon" sx={{marginRight: '5px', color: "#0b7fe8"}}/>
-                        <span>Popular This Season</span>
-                    </div>
+    return <>
+        <div className="anime-list">
+            <div className="anime-list__container">
+                <Paper
+                    component="form"
+                    sx={{
+                        p: "6px 8px",
+                        display: "flex",
+                        alignItems: "center",
+                        gap: 1,
+                        width: 500,
+                        backgroundColor: "#3871a2",
+                        margin: "0 auto"
+                    }}
+                >
+                    <InputBase
+                        value={currentValue}
+                        onChange={handleChange}
+                        sx={{ ml: 1, flex: 1, color: "#FFF" }}
+                        placeholder="Search current season anime"
+                        inputProps={{ "aria-label": "search anime" }}
+                    />
+                </Paper>
 
-                    <div className="anime-grid">
-                        <Grid animeLists={filteredAnime}/>
-                    </div>
+                <Box sx={{ display: "flex", justifyContent: "center" }}>
+                    <Tabs setActiveTab={setActiveTab} activeTab={activeTab} />
+                </Box>
+
+                <div className="anime-list__title" style={{ marginTop: 16 }}>
+                    <WhatshotIcon
+                        className="anime-list__title-icon"
+                        sx={{ marginRight: "5px", color: "#0b7fe8" }}
+                    />
+                    <span>
+                    {tabsConfig[activeTab].title}
+                </span>
+                </div>
+
+                <div className="anime-grid">
+                    <Grid
+                        animeLists={
+                            tabsConfig[activeTab].data
+                        }
+                    />
                 </div>
             </div>
-        </>
-
-    );
+        </div>
+    </>
 }
