@@ -7,4 +7,11 @@ export interface AnimeListType {
     title: string,
     score: number,
     favorites: number,
+    episodes: number,
+    genres: [
+        {
+            name: string,
+        }
+
+    ]
 }

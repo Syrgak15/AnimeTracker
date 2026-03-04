@@ -60,7 +60,7 @@ export default function CustomizedInputBase({ animeLists, limitedAnimeLists }: A
 
     return <>
         <div className="anime-list">
-            <div className="anime-list__container">
+            <div className="anime-liscdt__container">
                 <Paper
                     component="form"
                     sx={{

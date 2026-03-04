@@ -20,7 +20,7 @@ async function getAnimeLists() {
 
 async function getLimitedAnimeLists() {
     try {
-        const response = await fetch(`https://api.jikan.moe/v4/top/anime?type=movie&limit=10`);
+        const response = await fetch(`https://api.jikan.moe/v4/top/anime?type=special&limit=10`);
         if(!response.ok) throw new Error("Failed to fetch limited anime lists");
 
         const result = await response.json();

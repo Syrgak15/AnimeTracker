@@ -14,6 +14,7 @@ interface AnimeListProps {
 }
 
 export default function ImgMediaCard({anime}: AnimeListProps) {
+
     return (
         <Card sx={{
             maxWidth: 345,
@@ -29,11 +30,26 @@ export default function ImgMediaCard({anime}: AnimeListProps) {
             }
         }}>
             <CardMedia
+                sx={{position: 'relative'}}
                 component="img"
                 alt={anime.title}
                 height="400"
                 image={anime.images.jpg.large_image_url}
             />
+
+            <Typography
+                sx={{
+                    position: 'absolute',
+                    backgroundColor: "#118fe8",
+                    top: '9px',
+                    right: '5px',
+                    padding: '1px 9px',
+                    borderRadius: '5px',
+                    fontSize: "13px"
+                }}
+            >
+                Ep {anime.episodes}
+            </Typography>
 
             <Container>
                 <CardContent sx={{
@@ -50,6 +66,15 @@ export default function ImgMediaCard({anime}: AnimeListProps) {
                         {anime.title}
                     </Typography>
                 </CardContent>
+
+                <Typography
+                    sx={{fontSize: "14px", color: 'grey', marginTop: '10px'}}
+                >
+                    Genres: {" "}
+                    <span style={{color: '#118fe8'}}>
+                     {anime.genres?.map(genre => genre.name).join(", ")}
+                    </span>
+                </Typography>
 
                 <Box>
                     <CardActions sx={{padding: '16px 0', display: 'flex', justifyContent: 'space-between'}}>
