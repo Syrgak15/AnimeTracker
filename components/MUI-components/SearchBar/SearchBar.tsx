@@ -68,15 +68,22 @@ export default function CustomizedInputBase({ animeLists, limitedAnimeLists }: A
                         display: "flex",
                         alignItems: "center",
                         gap: 1,
-                        width: 500,
+                        maxWidth: 500,
                         backgroundColor: "#3871a2",
-                        margin: "0 auto"
+                        margin: "0 auto",
+                        '@media (max-width: 600px)': {
+                            width: '100%',
+                        }
                     }}
                 >
                     <InputBase
                         value={currentValue}
                         onChange={handleChange}
-                        sx={{ ml: 1, flex: 1, color: "#FFF" }}
+                        sx={{
+                            ml: 1,
+                            flex: 1,
+                            color: "#FFF",
+                        }}
                         placeholder="Search current season anime"
                         inputProps={{ "aria-label": "search anime" }}
                     />

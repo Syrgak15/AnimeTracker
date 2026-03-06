@@ -6,6 +6,7 @@ import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import Card from "../Card/Card";
 import {AnimeListType} from "@/types/AnimeListType";
+import Link from 'next/link';
 
 interface AnimeListProps {
     animeLists: AnimeListType[];
@@ -33,7 +34,12 @@ export default function ResponsiveGrid({animeLists}: AnimeListProps) {
             >
                 {animeLists?.map((anime, index) => (
                         <Grid key={index} size={{ xs: 2, sm: 4, md: 4, lg: 12/5 }} >
-                            <Card anime={anime} />
+                            <Link
+                                style={{ textDecoration: 'none' }}
+                                href={`/anime/${anime.mal_id}`}
+                            >
+                                <Card anime={anime} />
+                            </Link>
                         </Grid>
                 ))}
             </Grid>

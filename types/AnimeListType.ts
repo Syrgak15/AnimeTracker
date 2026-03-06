@@ -12,6 +12,9 @@ export interface AnimeListType {
         {
             name: string,
         }
-
-    ]
+    ],
+    mal_id: number,
+    synopsis: string,
+    type: string,
+    year: number,
 }

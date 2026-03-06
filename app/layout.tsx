@@ -17,11 +17,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+      <Header/>
       <Container suppressHydrationWarning maxWidth="xl">
-        <Header/>
           {children}
-          <Footer/>
       </Container>
+      <Footer/>
       </body>
     </html>
   );

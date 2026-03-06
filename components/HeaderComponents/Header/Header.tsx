@@ -1,31 +1,24 @@
-'use client'
+"use client"
 
 import Link from 'next/link'
-import TvIcon from '@mui/icons-material/Tv';
 import './style.css'
+import useScrollDirection from '@/hooks/useScrollDirection/useScrollDirection';
 
 export default function Header() {
-
-    const headerLinks = [
-        { name: 'AnimeTracker', href: '/' }
-    ]
+    const scrollDirection = useScrollDirection()
 
     return (
-        <div className="header">
-            <div className="header-logo">
-                <TvIcon fontSize='large' color="action"/>
-            </div>
+        <div className={`header scroll-${scrollDirection}`}>
             <div className="header-links">
-                {headerLinks.map((link, id) => (
-                    <div key={id}>
-                        <Link
-                            className="header-link"
-                            href={link.href}
-                        >
-                            {link.name}
-                        </Link>
-                    </div>
-                ))}
+                <div className="header-logo">
+
+                </div>
+                <Link
+                    className="header-link"
+                    href="/"
+                >
+                    AnimeTracker
+                </Link>
             </div>
         </div>
     )
