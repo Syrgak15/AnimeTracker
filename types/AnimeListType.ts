@@ -16,5 +16,13 @@ export interface AnimeListType {
     mal_id: number,
     synopsis: string,
     type: string,
-    year: number,
+    aired: {
+        prop: {
+            from: {
+                year: number
+            }
+        }
+    },
+    status: string,
+    source: string,
 }

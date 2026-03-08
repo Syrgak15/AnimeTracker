@@ -1,8 +1,8 @@
 .anime-details__content {
-    margin-top: 70px;
-    margin-right: 150px;
+    margin: 70px 100px 0 100px;
     display: flex;
     justify-content: center;
+    gap: 50px;
 }
 .anime-details__image {
     width: 350px;
@@ -22,8 +22,9 @@
     font-weight: bold;
     color: #FFF;
 }
-.anime-details__genres {
-    margin-top: 20px;
+.anime-details__genres,
+.anime-details__statuses {
+    margin-top: 10px;
     display: flex;
     justify-content: left;
     gap: 15px;
@@ -34,4 +35,53 @@
     border-radius: 5px;
     padding: 8px 13px;
     font-size: 13px;
+}
+.anime-details__meta {
+    display: flex;
+    justify-content: left;
+    gap: 15px;
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.anime-details__meta-score {
+    display: flex;
+    gap: 5px;
+    color: #e2cc12;
+}
+.anime-details__meta-year, .anime-details__meta-episodes {
+    color: grey;
+}
+.anime-details__statuses div {
+    background: #251e87;
+    color: #FFF;
+    border-radius: 5px;
+    padding: 8px 13px;
+    font-size: 13px;
+}
+.anime-details__synopsis {
+    margin-top: 20px;
+    color: #fdfdfdc4;
+    font-size: 16px;
+    line-height: 1.6;
+}
+.anime-details__trailer {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 59%;
+    margin: 40px 100px 0;
+}
+.anime-details__trailer-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 80%;
+    height: 79.50%;
+    padding: 30px;
+    margin-left: 45px;
+    border-radius: 30px;
+    background: #171717CC;
 }
