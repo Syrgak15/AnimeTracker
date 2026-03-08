@@ -8,6 +8,7 @@ import Box from "@mui/material/Box";
 import { Container } from '@mui/material';
 import GradeIcon from '@mui/icons-material/Grade';
 import GroupsIcon from '@mui/icons-material/Groups';
+import Genre from "@/components/MainPageComponents/Genre/Genre";
 
 interface AnimeListProps {
     anime: AnimeListType;
@@ -67,24 +68,17 @@ export default function ImgMediaCard({anime}: AnimeListProps) {
                     </Typography>
                 </CardContent>
 
-                <Typography
-                    sx={{fontSize: "14px", color: 'grey', marginTop: '10px'}}
-                >
-                    Genres: {" "}
-                    <span style={{color: '#118fe8'}}>
-                     {anime.genres?.map(genre => genre.name).join(", ")}
-                    </span>
-                </Typography>
-
                 <Box>
                     <CardActions sx={{padding: '16px 0', display: 'flex', justifyContent: 'space-between'}}>
                         <Typography
                             gutterBottom
                             variant="h5"
                             component="div"
-                            sx={{display: 'flex', alignItems: "center", gap: "2px", color: 'grey'}}>
-                            <Box sx={{height: '30px'}}>
-                                <GradeIcon fontSize="small"/>
+                            sx={{display: 'flex', alignItems: "center", gap: "2px", color: '#e2cc12', fontSize: '17px'}}>
+                            <Box sx={{height: '17px'}}>
+                                <GradeIcon
+                                    sx={{fontSize: '17px'}}
+                                    fontSize="small"/>
                             </Box>
                             {anime.score}
                         </Typography>
@@ -92,14 +86,25 @@ export default function ImgMediaCard({anime}: AnimeListProps) {
                         <Typography
                             gutterBottom variant="h5"
                             component="div"
-                            sx={{display: 'flex', alignItems: "center", gap: "5px", color: 'grey'}}>
-                            <Box>
-                                <GroupsIcon fontSize="small" />
-                            </Box>
-                            {anime.favorites}
+                            sx={{display: 'flex', alignItems: "center", gap: "5px", color: 'grey', fontSize: '17px'}}>
+                            {anime.aired.prop.from.year} Year
                         </Typography>
-
                     </CardActions>
+                </Box>
+
+                <Box
+                    sx={{display: 'flex', gap: '5px'}}
+                >
+                    {anime.genres?.slice(0, 2).map((genre, id) => (
+                        <span key={id}>
+                            <Genre name={genre.name}/>
+                        </span>
+                    ))}
+                    {anime.genres?.length > 2 && (
+                        <span>
+                            <Genre name={`+${anime.genres.length - 2}`}/>
+                        </span>
+                    )}
                 </Box>
             </Container>
         </Card>

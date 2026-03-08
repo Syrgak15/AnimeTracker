@@ -1,0 +1,8 @@
+.genre {
+    background: #643dc7;
+    color: #FFF;
+    border-radius: 5px;
+    padding: 5px 13px;
+    font-size: 13px;
+    display: inline-block;
+}

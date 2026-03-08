@@ -3,6 +3,7 @@ import "./style.css"
 import GradeIcon from "@mui/icons-material/Grade";
 import Box from "@mui/material/Box";
 import AnimeVideoType from "@/types/AnimeVideoType";
+import Genre from "@/components/MainPageComponents/Genre/Genre";
 
 interface AnimeListProps {
     anime: AnimeListType;
@@ -11,7 +12,7 @@ interface AnimeListProps {
 
 
 export default function Details({anime, video}: AnimeListProps) {
-    if(!video) return null;
+    if (!video) return null;
 
     const videoUrl = video.promo[0]?.trailer?.embed_url || null;
     const videoTitle = video.promo[0]?.title;
@@ -30,10 +31,10 @@ export default function Details({anime, video}: AnimeListProps) {
                     </div>
 
                     <div className="anime-details__genres">
-                        {anime.genres.map((genre) => (
-                            <span key={genre.name} className="anime-details__genre">
-                            {genre.name}
-                        </span>
+                        {anime.genres.map((genre, index) => (
+                            <span key={index}>
+                                <Genre name={genre.name}/>
+                            </span>
                         ))}
                     </div>
 
@@ -72,12 +73,27 @@ export default function Details({anime, video}: AnimeListProps) {
             </div>
             <div className="anime-details__trailer">
                 <div className="anime-details__trailer-wrapper">
-                    <iframe
+                    {videoUrl ? (
+                        <iframe
                             src={videoUrl}
                             title={videoTitle}
                             allowFullScreen
                             className="anime-details__trailer-video"
-                    ></iframe>
+                        ></iframe>
+                    ) : (
+                        <iframe
+                            srcDoc={`
+                            <div style="text-align: center; padding: 20px">
+                                <span style="font-size: 30px; font-weight: bold; color: #f9f5f5e3">No trailer available.</span>
+                                <p style="font-size: 15px; font-weight: bold; color: grey">No anime data available. Check back later.</p>
+                            </div> 
+                            `}
+                            title={videoTitle}
+                            allowFullScreen
+                            className="anime-details__trailer-video not-available"
+                        ></iframe>
+                    )}
+
                 </div>
             </div>
         </div>
