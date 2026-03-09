@@ -7,6 +7,7 @@ import useScrollDirection from '@/hooks/useScrollDirection/useScrollDirection';
 export default function Header() {
     const scrollDirection = useScrollDirection()
 
+
     return (
         <div className={`header scroll-${scrollDirection}`}>
             <div className="header-links">
@@ -17,7 +18,7 @@ export default function Header() {
                     className="header-link"
                     href="/"
                 >
-                    AnimeTracker
+                    Anira
                 </Link>
             </div>
         </div>

@@ -36,9 +36,6 @@ export default function Footer() {
                     ))}
                 </div>
             </div>
-            <div className="footer-copyright">
-                Copyright © 2026 Syrgak15. All rights reserved.
-            </div>
             <div className="api-info">
                 <div className="api-icon">
                     <StorageIcon fontSize="small"/>
@@ -51,6 +48,9 @@ export default function Footer() {
                         Powered by Jikan REST API
                     </Link>
                 </div>
+            </div>
+            <div className="footer-copyright">
+                Copyright © 2026 Syrgak15. All rights reserved.
             </div>
         </div>
     )

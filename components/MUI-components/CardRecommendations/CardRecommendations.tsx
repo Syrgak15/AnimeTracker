@@ -20,7 +20,6 @@ export default function ImgMediaCard({anime}: AnimeListProps) {
         <Card sx={{
             maxWidth: 345,
             height: 600,
-            backgroundColor: "#121e28",
             color: "#FFF",
             fontWeight: "bold",
             borderRadius: '10px',
@@ -41,12 +40,10 @@ export default function ImgMediaCard({anime}: AnimeListProps) {
             <Typography
                 sx={{
                     position: 'absolute',
-                    backgroundColor: "#118fe8",
                     top: '9px',
                     right: '5px',
                     padding: '1px 9px',
                     borderRadius: '5px',
-                    fontSize: "13px"
                 }}
             >
                 Ep {anime.episodes}
@@ -63,7 +60,6 @@ export default function ImgMediaCard({anime}: AnimeListProps) {
                     wordBreak: 'break-word',
                     height: "80px"
                 }}>
-                    <Typography gutterBottom variant="h5" component="div">
                         {anime.title}
                     </Typography>
                 </CardContent>
@@ -74,7 +70,6 @@ export default function ImgMediaCard({anime}: AnimeListProps) {
                             gutterBottom
                             variant="h5"
                             component="div"
-                            sx={{display: 'flex', alignItems: "center", gap: "2px", color: '#e2cc12', fontSize: '17px'}}>
                             <Box sx={{height: '17px'}}>
                                 <GradeIcon
                                     sx={{fontSize: '17px'}}
@@ -86,7 +81,6 @@ export default function ImgMediaCard({anime}: AnimeListProps) {
                         <Typography
                             gutterBottom variant="h5"
                             component="div"
-                            sx={{display: 'flex', alignItems: "center", gap: "5px", color: 'grey', fontSize: '17px'}}>
                             {anime.aired?.prop?.from.year} Year
                         </Typography>
                     </CardActions>

@@ -20,7 +20,7 @@
 .anime-details__title {
     font-size: 20px;
     font-weight: bold;
-    color: #FFF;
+    color: var(--title-color);
 }
 .anime-details__genres,
 .anime-details__statuses {
@@ -43,11 +43,12 @@
     color: #e2cc12;
 }
 .anime-details__meta-year, .anime-details__meta-episodes {
-    color: grey;
+    color: #83cf9ab8;
 }
 .anime-details__statuses div {
     background: #251e87;
     color: #FFF;
+    font-weight: bold;
     border-radius: 5px;
     padding: 8px 13px;
     font-size: 13px;

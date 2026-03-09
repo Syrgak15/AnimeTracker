@@ -69,11 +69,11 @@ export default function CustomizedInputBase({ animeLists, limitedAnimeLists }: A
                         alignItems: "center",
                         gap: 1,
                         maxWidth: 500,
-                        backgroundColor: "#3871a2",
+                        backgroundColor: "var(--bg-color)",
                         margin: "0 auto",
                         '@media (max-width: 600px)': {
                             width: '100%',
-                        }
+                        },
                     }}
                 >
                     <InputBase
@@ -82,7 +82,9 @@ export default function CustomizedInputBase({ animeLists, limitedAnimeLists }: A
                         sx={{
                             ml: 1,
                             flex: 1,
-                            color: "#FFF",
+                            color: "var(--text-color)",
+                            fontWeight: "bold",
+                            fontFamily: "var(--ffamily)"
                         }}
                         placeholder="Search current season anime"
                         inputProps={{ "aria-label": "search anime" }}
@@ -96,7 +98,7 @@ export default function CustomizedInputBase({ animeLists, limitedAnimeLists }: A
                 <div className="anime-list__title" style={{ marginTop: 16 }}>
                     <WhatshotIcon
                         className="anime-list__title-icon"
-                        sx={{ marginRight: "5px", color: "#0b7fe8" }}
+                        sx={{ marginRight: "5px", color: "#48b282" }}
                     />
                     <span>
                     {tabsConfig[activeTab].title}

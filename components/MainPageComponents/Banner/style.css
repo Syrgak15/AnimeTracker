@@ -1,0 +1,11 @@
+.banner {
+    text-align: center;
+    background-image: url("../../../public/banner-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+.banner-title {
+    padding-top: 200px;
+}

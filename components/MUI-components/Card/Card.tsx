@@ -35,7 +35,7 @@ export default function ImgMediaCard({anime}: AnimeListProps) {
                 component="img"
                 alt={anime.title}
                 height="400"
-                image={anime.images?.jpg.large_image_url}
+                image={anime.images.jpg.large_image_url}
             />
 
             <Typography
@@ -87,7 +87,7 @@ export default function ImgMediaCard({anime}: AnimeListProps) {
                             gutterBottom variant="h5"
                             component="div"
                             sx={{display: 'flex', alignItems: "center", gap: "5px", color: 'grey', fontSize: '17px'}}>
-                            {anime.aired?.prop?.from.year} Year
+                            {anime.aired.prop.from.year} Year
                         </Typography>
                     </CardActions>
                 </Box>
