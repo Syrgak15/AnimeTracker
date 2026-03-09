@@ -5,6 +5,7 @@ import {AnimeListType} from "@/types/AnimeListType";
 import AnimeVideoType from "@/types/AnimeVideoType";
 import Skeleton from '@/components/MUI-components/Skeleton/Skeleton';
 import AnimeDetails from '@/components/MainPageComponents/AnimeDetails/AnimeDetails';
+import Recommendations from "@/components/MainPageComponents/Recommendations/Recommendations";
 
 export default function AnimeDetailsPage({ params }: { params: Promise<{ slug: string }> }) {
     const { slug } = use(params);
@@ -46,7 +47,10 @@ export default function AnimeDetailsPage({ params }: { params: Promise<{ slug: s
         <>
             {
                 anime ? (
-                    <AnimeDetails anime={anime} video={videoUrl}/>
+                    <div>
+                        <AnimeDetails anime={anime} video={videoUrl}/>
+                        <Recommendations/>
+                    </div>
                 ) : (
                     <Skeleton/>
                 )

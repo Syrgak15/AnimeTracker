@@ -10,7 +10,6 @@ interface AnimeListProps {
     video: AnimeVideoType | null;
 }
 
-
 export default function Details({anime, video}: AnimeListProps) {
     if (!video) return null;
 
