@@ -106,11 +106,16 @@ export default function CustomizedInputBase({ animeLists, limitedAnimeLists }: A
                 </div>
 
                 <div className="anime-grid">
-                    <Grid
-                        animeLists={
-                            tabsConfig[activeTab].data
-                        }
-                    />
+                    {tabsConfig[activeTab].data.length !== 0 ? (
+                        <Grid
+                            animeLists={
+                                tabsConfig[activeTab].data
+                            }
+                        />
+                    ) : (
+                        <span>No anime found matching your search.</span>
+                    ) }
+
                 </div>
             </div>
         </div>

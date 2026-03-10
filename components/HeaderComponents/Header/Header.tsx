@@ -3,11 +3,10 @@
 import Link from 'next/link'
 import './style.css'
 import useScrollDirection from '@/hooks/useScrollDirection/useScrollDirection';
+import SignInButton from "@/components/HeaderComponents/SignInButton/SignInButton";
 
 export default function Header() {
     const scrollDirection = useScrollDirection()
-
-
     return (
         <div className={`header scroll-${scrollDirection}`}>
             <div className="header-links">
@@ -20,6 +19,9 @@ export default function Header() {
                 >
                     Anira
                 </Link>
+            </div>
+            <div className="header-login">
+                <SignInButton/>
             </div>
         </div>
     )

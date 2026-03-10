@@ -5,6 +5,7 @@ import Container from '@mui/material/Container';
 import Footer from "@/components/MainPageComponents/Footer/Footer";
 import { Play } from 'next/font/google'
 import Banner from "@/components/MainPageComponents/Banner/Banner";
+import { SessionProvider } from 'next-auth/react';
 
 
 export const metadata: Metadata = {
@@ -22,15 +23,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={play.className}>
-      <body>
-      <Header/>
-      {/*<Banner/>*/}
-      <Container suppressHydrationWarning maxWidth="xl">
-          {children}
-      </Container>
-      <Footer/>
-      </body>
-    </html>
+      <SessionProvider>
+          <html lang="en" className={play.className}>
+          <body>
+          <Header/>
+          {/*<Banner/>*/}
+          <Container suppressHydrationWarning maxWidth="xl">
+              {children}
+          </Container>
+          <Footer/>
+          </body>
+          </html>
+      </SessionProvider>
   );
 }

@@ -2,24 +2,23 @@ import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import {AnimeListType} from "@/types/AnimeListType";
+import { AnimeListType } from "@/types/AnimeListType";
 import Typography from '@mui/material/Typography';
 import Box from "@mui/material/Box";
 import { Container } from '@mui/material';
 import GradeIcon from '@mui/icons-material/Grade';
-import GroupsIcon from '@mui/icons-material/Groups';
 import Genre from "@/components/MainPageComponents/Genre/Genre";
 
 interface AnimeListProps {
     anime: AnimeListType;
 }
 
-export default function ImgMediaCard({anime}: AnimeListProps) {
-
+export default function ImgMediaCard({ anime }: AnimeListProps) {
     return (
         <Card sx={{
             maxWidth: 345,
             height: 600,
+            backgroundColor: "#8ab37fde",
             color: "#FFF",
             fontWeight: "bold",
             borderRadius: '10px',
@@ -34,16 +33,18 @@ export default function ImgMediaCard({anime}: AnimeListProps) {
                 component="img"
                 alt={anime.title}
                 height="400"
-                image={anime.images?.jpg.large_image_url}
+                image={anime.images.jpg.large_image_url}
             />
 
             <Typography
                 sx={{
                     position: 'absolute',
+                    backgroundColor: "#118fe8",
                     top: '9px',
                     right: '5px',
                     padding: '1px 9px',
                     borderRadius: '5px',
+                    fontSize: "13px"
                 }}
             >
                 Ep {anime.episodes}
@@ -60,6 +61,7 @@ export default function ImgMediaCard({anime}: AnimeListProps) {
                     wordBreak: 'break-word',
                     height: "80px"
                 }}>
+                    <Typography gutterBottom variant="h5" component="div">
                         {anime.title}
                     </Typography>
                 </CardContent>
@@ -70,6 +72,7 @@ export default function ImgMediaCard({anime}: AnimeListProps) {
                             gutterBottom
                             variant="h5"
                             component="div"
+                            sx={{display: 'flex', alignItems: "center", gap: "2px", color: '#e2cc12', fontSize: '17px'}}>
                             <Box sx={{height: '17px'}}>
                                 <GradeIcon
                                     sx={{fontSize: '17px'}}
@@ -81,7 +84,8 @@ export default function ImgMediaCard({anime}: AnimeListProps) {
                         <Typography
                             gutterBottom variant="h5"
                             component="div"
-                            {anime.aired?.prop?.from.year} Year
+                            sx={{display: 'flex', alignItems: "center", gap: "5px", color: '#f6fff3', fontSize: '17px'}}>
+                            {anime.aired.prop.from.year} Year
                         </Typography>
                     </CardActions>
                 </Box>

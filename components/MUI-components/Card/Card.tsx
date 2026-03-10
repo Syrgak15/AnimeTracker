@@ -20,7 +20,7 @@ export default function ImgMediaCard({anime}: AnimeListProps) {
         <Card sx={{
             maxWidth: 345,
             height: 600,
-            backgroundColor: "#121e28",
+            backgroundColor: "#8ab37fde",
             color: "#FFF",
             fontWeight: "bold",
             borderRadius: '10px',
@@ -86,7 +86,7 @@ export default function ImgMediaCard({anime}: AnimeListProps) {
                         <Typography
                             gutterBottom variant="h5"
                             component="div"
-                            sx={{display: 'flex', alignItems: "center", gap: "5px", color: 'grey', fontSize: '17px'}}>
+                            sx={{display: 'flex', alignItems: "center", gap: "5px", color: '#f6fff3', fontSize: '17px'}}>
                             {anime.aired.prop.from.year} Year
                         </Typography>
                     </CardActions>
