@@ -15,13 +15,21 @@ export default function UserDropDown({isClicked, setIsClicked}: ChildProps) {
     const pathname = usePathname();
 
     return (
-        <div className={`user-dropdown ${pathname === "/profile" ? "hidden" : ""}`}>
-            <div className="dropdown-item" onClick={() => setIsClicked(!isClicked)}>
+        <div className={`user-dropdown`}>
+            <div className={`dropdown-item ${pathname === "/profile" ? "hidden" : ""}`} onClick={() => setIsClicked(!isClicked)}>
                 <Link
                     href="/profile"
                     className="dropdown-link"
                 >
                     Profile
+                </Link>
+            </div>
+            <div className={`dropdown-item ${pathname === "/favorites" ? "hidden" : ""}`} onClick={() => setIsClicked(!isClicked)}>
+                <Link
+                    href="/favorites"
+                    className="dropdown-link"
+                >
+                    Favorites
                 </Link>
             </div>
             <div

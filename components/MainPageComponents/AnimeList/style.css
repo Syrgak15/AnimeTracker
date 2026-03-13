@@ -1,5 +1,6 @@
 .anime-list {
     margin-top: 40px;
+    min-height: 800px;
 }
 .anime-list__container {
     width: auto;

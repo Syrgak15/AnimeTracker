@@ -2,6 +2,9 @@
     width: max-content;
     position: relative;
 }
+.user-info.hidden {
+    display: none;
+}
 
 .user-info span {
     color: var(--text-color);

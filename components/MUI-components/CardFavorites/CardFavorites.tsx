@@ -9,7 +9,6 @@ import { Container } from '@mui/material';
 import GradeIcon from '@mui/icons-material/Grade';
 import GroupsIcon from '@mui/icons-material/Groups';
 import Genre from "@/components/MainPageComponents/Genre/Genre";
-import AddToFavorites from "@/components/MainPageComponents/AddToFavorites/AddToFavorites";
 
 interface AnimeListProps {
     anime: AnimeListType;
@@ -38,17 +37,6 @@ export default function ImgMediaCard({anime}: AnimeListProps) {
                 height="400"
                 image={anime.images.jpg.large_image_url}
             />
-
-            <Typography
-                sx={{
-                    position: 'absolute',
-                    top: '9px',
-                    left: '7px',
-                    color: 'rgb(161 247 5 / 96%)'
-                }}
-            >
-                <AddToFavorites/>
-            </Typography>
 
             <Typography
                 sx={{

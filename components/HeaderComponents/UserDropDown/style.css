@@ -16,6 +16,6 @@
     font-weight: bold;
     cursor: pointer;
 }
-.user-dropdown.hidden {
+.hidden {
     display: none;
 }

@@ -4,12 +4,14 @@ import "./style.css";
 import Button from "@mui/material/Button";
 import { useSession, signIn, signOut } from 'next-auth/react';
 import {useState} from "react";
+import { usePathname } from 'next/navigation';
 import UserDropDown from "@/components/HeaderComponents/UserDropDown/UserDropDown";
-import Image from 'next/image'
+
 
 export default function SignInButton() {
     const { data: session} = useSession();
     const [isClicked, setIsClicked] = useState<boolean>(false)
+    const pathname = usePathname();
 
     const handleClick = () => {
         setIsClicked(!isClicked)
@@ -18,7 +20,7 @@ export default function SignInButton() {
     if (session) {
         return (
             <>
-                <div className="user-info" onClick={handleClick}>
+                <div className={`user-info`} onClick={handleClick}>
                     <span>{session.user?.name}</span>
                 </div>
                 {isClicked && <UserDropDown isClicked={isClicked} setIsClicked={setIsClicked}/>}
