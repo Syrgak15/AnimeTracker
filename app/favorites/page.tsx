@@ -3,11 +3,27 @@
 import "./style.css"
 import Skeleton from "@/components/MUI-components/Skeleton/Skeleton";
 import { useSession } from 'next-auth/react';
-import FavoritesListServer from "@/components/ProfileComponents/FavoritesList/FavoritesListServer";
+import {useEffect, useState} from "react";
+import {getFavorites} from "@/app/services/favorites/getFavorites";
+import FavoritesList from "@/components/ProfileComponents/FavoritesList/FavoritesList";
 
 export default function Favorites() {
+    const {data: session, status} = useSession();
+    const [favorites, setFavorites] = useState<any[]>([]);
+    const userId = String(session?.user?.id);
 
-    const { status} = useSession();
+    useEffect(() => {
+        const getFavoriteAnimes = async() => {
+            if(!session?.user?.id) return;
+
+            const data = await getFavorites(userId);
+            setFavorites(data);
+        }
+
+        getFavoriteAnimes();
+
+    }, [session]);
+
 
     if (status === "loading") {
         return (
@@ -21,6 +37,8 @@ export default function Favorites() {
         )
     }
 
+    console.log(favorites);
+
     return (
         <div className="favorites">
             <div className="favorites-content">
@@ -31,7 +49,7 @@ export default function Favorites() {
                     <p>All anime added to your favorites</p>
                 </div>
                 <div className="favorites__grid">
-                    <FavoritesListServer/>
+                    <FavoritesList anime={favorites}/>
                 </div>
             </div>
         </div>

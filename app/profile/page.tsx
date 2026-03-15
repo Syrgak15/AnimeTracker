@@ -2,6 +2,7 @@
 
 import "./style.css"
 import { useSession, signOut } from 'next-auth/react';
+import { getFavorites } from "../services/favorites/getFavorites";
 import Skeleton from "@/components/MUI-components/Skeleton/Skeleton";
 
 export default function ProfilePage() {
@@ -18,6 +19,7 @@ export default function ProfilePage() {
             <p>You are not authorized to view this page!</p>
         )
     }
+
 
     return (
         <div className="profile">
