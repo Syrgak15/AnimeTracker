@@ -2,7 +2,6 @@
 
 import "./style.css"
 import { useSession, signOut } from 'next-auth/react';
-import { getFavorites } from "../services/favorites/getFavorites";
 import Skeleton from "@/components/MUI-components/Skeleton/Skeleton";
 
 export default function ProfilePage() {

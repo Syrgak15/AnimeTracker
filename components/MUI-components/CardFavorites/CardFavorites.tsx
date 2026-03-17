@@ -9,9 +9,10 @@ import { Container } from '@mui/material';
 import GradeIcon from '@mui/icons-material/Grade';
 import GroupsIcon from '@mui/icons-material/Groups';
 import Genre from "@/components/MainPageComponents/Genre/Genre";
+import {FavoriteAnimeList} from "@/types/FavoriteAnimeList";
 
 interface AnimeListProps {
-    anime: AnimeListType;
+    anime: FavoriteAnimeList;
 }
 
 export default function ImgMediaCard({anime}: AnimeListProps) {
@@ -35,7 +36,7 @@ export default function ImgMediaCard({anime}: AnimeListProps) {
                 component="img"
                 alt={anime.title}
                 height="400"
-                image={anime.images.jpg.large_image_url}
+                image={anime.images}
             />
 
             <Typography
@@ -83,29 +84,29 @@ export default function ImgMediaCard({anime}: AnimeListProps) {
                             {anime.score}
                         </Typography>
 
-                        <Typography
-                            gutterBottom variant="h5"
-                            component="div"
-                            sx={{display: 'flex', alignItems: "center", gap: "5px", color: '#f6fff3', fontSize: '17px', fontFamily: "var(--ffamily)"}}>
-                            {anime.aired.prop.from.year} Year
-                        </Typography>
+                        {/*<Typography*/}
+                        {/*    gutterBottom variant="h5"*/}
+                        {/*    component="div"*/}
+                        {/*    sx={{display: 'flex', alignItems: "center", gap: "5px", color: '#f6fff3', fontSize: '17px', fontFamily: "var(--ffamily)"}}>*/}
+                        {/*    {anime.aired.prop.from.year} Year*/}
+                        {/*</Typography>*/}
                     </CardActions>
                 </Box>
 
-                <Box
-                    sx={{display: 'flex', gap: '5px'}}
-                >
-                    {anime.genres?.slice(0, 2).map((genre, id) => (
-                        <span key={id}>
-                            <Genre name={genre.name}/>
-                        </span>
-                    ))}
-                    {anime.genres?.length > 2 && (
-                        <span>
-                            <Genre name={`+${anime.genres.length - 2}`}/>
-                        </span>
-                    )}
-                </Box>
+                {/*<Box*/}
+                {/*    sx={{display: 'flex', gap: '5px'}}*/}
+                {/*>*/}
+                {/*    {anime.genres?.slice(0, 2).map((genre, id) => (*/}
+                {/*        <span key={id}>*/}
+                {/*            <Genre name={genre.name}/>*/}
+                {/*        </span>*/}
+                {/*    ))}*/}
+                {/*    {anime.genres?.length > 2 && (*/}
+                {/*        <span>*/}
+                {/*            <Genre name={`+${anime.genres.length - 2}`}/>*/}
+                {/*        </span>*/}
+                {/*    )}*/}
+                {/*</Box>*/}
             </Container>
         </Card>
     );

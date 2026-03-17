@@ -4,13 +4,10 @@ import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
-import Card from "../Card/Card";
 import {AnimeListType} from "@/types/AnimeListType";
 import Link from 'next/link';
+import CardFavorites from '../CardFavorites/CardFavorites';
 
-interface AnimeListProps {
-    animeLists?: AnimeListType[];
-}
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: '#fff',
@@ -23,7 +20,7 @@ const Item = styled(Paper)(({ theme }) => ({
     }),
 }));
 
-export default function ResponsiveGridFavorites({animeLists}: AnimeListProps) {
+export default function ResponsiveGridFavorites() {
 
     return (
         <Box sx={{ flexGrow: 1 }}>
@@ -34,12 +31,7 @@ export default function ResponsiveGridFavorites({animeLists}: AnimeListProps) {
             >
                 {/*{animeLists?.map((anime, index) => (*/}
                 {/*    <Grid key={index} size={{ xs: 2, sm: 4, md: 4, lg: 12/5 }} >*/}
-                {/*        <Link*/}
-                {/*            style={{ textDecoration: 'none' }}*/}
-                {/*            href={`/anime/${anime.mal_id}`}*/}
-                {/*        >*/}
-                {/*            <Card anime={anime} />*/}
-                {/*        </Link>*/}
+                {/*            <CardFavorites anime={anime} />*/}
                 {/*    </Grid>*/}
                 {/*))}*/}
             </Grid>

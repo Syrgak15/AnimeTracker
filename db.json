@@ -1,0 +1,526 @@
+{
+  "favorites": [
+    {
+      "id": "f0c8",
+      "anime": {
+        "mal_id": 56009,
+        "url": "https://myanimelist.net/anime/56009/Yuusha-kei_ni_Shosu__Choubatsu_Yuusha_9004-tai_Keimu_Kiroku",
+        "images": {
+          "jpg": {
+            "image_url": "https://myanimelist.net/images/anime/1062/151911.jpg",
+            "small_image_url": "https://myanimelist.net/images/anime/1062/151911t.jpg",
+            "large_image_url": "https://myanimelist.net/images/anime/1062/151911l.jpg"
+          },
+          "webp": {
+            "image_url": "https://myanimelist.net/images/anime/1062/151911.webp",
+            "small_image_url": "https://myanimelist.net/images/anime/1062/151911t.webp",
+            "large_image_url": "https://myanimelist.net/images/anime/1062/151911l.webp"
+          }
+        },
+        "trailer": {
+          "youtube_id": null,
+          "url": null,
+          "embed_url": "https://www.youtube-nocookie.com/embed/GcRs1JC7xeg?enablejsapi=1&wmode=opaque&autoplay=1",
+          "images": {
+            "image_url": null,
+            "small_image_url": null,
+            "medium_image_url": null,
+            "large_image_url": null,
+            "maximum_image_url": null
+          }
+        },
+        "approved": true,
+        "titles": [
+          {
+            "type": "Default",
+            "title": "Yuusha-kei ni Shosu: Choubatsu Yuusha 9004-tai Keimu Kiroku"
+          },
+          {
+            "type": "Synonym",
+            "title": "Sentenced to Brave Punishment"
+          },
+          {
+            "type": "Synonym",
+            "title": "Punishment for Brave Hero: 9004 Corps Prison Record"
+          },
+          {
+            "type": "Synonym",
+            "title": "Sentenced to Hero Punishment: The Service Records of the 9004th Penitent Hero Corps"
+          },
+          {
+            "type": "Synonym",
+            "title": "Hero Punishment"
+          },
+          {
+            "type": "Synonym",
+            "title": "Sentenced to Be a Hero: The Prison Records of Penal Hero Unit 9004"
+          },
+          {
+            "type": "Japanese",
+            "title": "勇者刑に処す 懲罰勇者9004隊刑務記録"
+          },
+          {
+            "type": "English",
+            "title": "Sentenced to Be a Hero"
+          }
+        ],
+        "title": "Yuusha-kei ni Shosu: Choubatsu Yuusha 9004-tai Keimu Kiroku",
+        "title_english": "Sentenced to Be a Hero",
+        "title_japanese": "勇者刑に処す 懲罰勇者9004隊刑務記録",
+        "title_synonyms": [
+          "Sentenced to Brave Punishment",
+          "Punishment for Brave Hero: 9004 Corps Prison Record",
+          "Sentenced to Hero Punishment: The Service Records of the 9004th Penitent Hero Corps",
+          "Hero Punishment",
+          "Sentenced to Be a Hero: The Prison Records of Penal Hero Unit 9004"
+        ],
+        "type": "TV",
+        "source": "Light novel",
+        "episodes": 12,
+        "status": "Currently Airing",
+        "airing": true,
+        "aired": {
+          "from": "2026-01-03T00:00:00+00:00",
+          "to": "2026-03-26T00:00:00+00:00",
+          "prop": {
+            "from": {
+              "day": 3,
+              "month": 1,
+              "year": 2026
+            },
+            "to": {
+              "day": 26,
+              "month": 3,
+              "year": 2026
+            }
+          },
+          "string": "Jan 3, 2026 to Mar 26, 2026"
+        },
+        "duration": "25 min per ep",
+        "rating": "R - 17+ (violence & profanity)",
+        "score": 8.15,
+        "scored_by": 44122,
+        "rank": 504,
+        "popularity": 1165,
+        "members": 240959,
+        "favorites": 1105,
+        "synopsis": "\"Hero\" is the worst punishment in the world. Those convicted of heinous crimes are sentenced to become \"Heroes\" and forced to enter the mandatory military service in the war against the Demon Lords. These convicts are not even allowed to die—if killed, they will be resurrected to fight another day.\n\nHero Xylo Forbartz, former head of the Order of the Holy Knights, leads a penal unit of deplorables fighting on the front lines. It is in these direst of circumstances that he meets Teoritta, one of the world's strongest weapons. \"When every last enemy has been defeated, you are to shower me with praise and pat my head.\" In order to survive and to take revenge on those who wronged him, he makes a pact with the goddess and launches headfirst into a maelstrom of war and intrigue.\n\n(Source: Official site, edited)",
+        "background": "",
+        "season": "winter",
+        "year": 2026,
+        "broadcast": {
+          "day": "Thursdays",
+          "time": "22:30",
+          "timezone": "Asia/Tokyo",
+          "string": "Thursdays at 22:30 (JST)"
+        },
+        "producers": [
+          {
+            "mal_id": 1345,
+            "type": "anime",
+            "name": "Sammy",
+            "url": "https://myanimelist.net/anime/producer/1345/Sammy"
+          },
+          {
+            "mal_id": 1412,
+            "type": "anime",
+            "name": "Kansai TV",
+            "url": "https://myanimelist.net/anime/producer/1412/Kansai_TV"
+          },
+          {
+            "mal_id": 2074,
+            "type": "anime",
+            "name": "Bit grooove promotion",
+            "url": "https://myanimelist.net/anime/producer/2074/Bit_grooove_promotion"
+          }
+        ],
+        "licensors": [],
+        "studios": [
+          {
+            "mal_id": 1997,
+            "type": "anime",
+            "name": "Studio KAI",
+            "url": "https://myanimelist.net/anime/producer/1997/Studio_KAI"
+          }
+        ],
+        "genres": [
+          {
+            "mal_id": 1,
+            "type": "anime",
+            "name": "Action",
+            "url": "https://myanimelist.net/anime/genre/1/Action"
+          },
+          {
+            "mal_id": 2,
+            "type": "anime",
+            "name": "Adventure",
+            "url": "https://myanimelist.net/anime/genre/2/Adventure"
+          },
+          {
+            "mal_id": 10,
+            "type": "anime",
+            "name": "Fantasy",
+            "url": "https://myanimelist.net/anime/genre/10/Fantasy"
+          }
+        ],
+        "explicit_genres": [],
+        "themes": [],
+        "demographics": []
+      },
+      "email": "onlyfornew15@gmail.com",
+      "animeId": 56009
+    },
+    {
+      "id": "c52c",
+      "anime": {
+        "mal_id": 56009,
+        "url": "https://myanimelist.net/anime/56009/Yuusha-kei_ni_Shosu__Choubatsu_Yuusha_9004-tai_Keimu_Kiroku",
+        "images": {
+          "jpg": {
+            "image_url": "https://myanimelist.net/images/anime/1062/151911.jpg",
+            "small_image_url": "https://myanimelist.net/images/anime/1062/151911t.jpg",
+            "large_image_url": "https://myanimelist.net/images/anime/1062/151911l.jpg"
+          },
+          "webp": {
+            "image_url": "https://myanimelist.net/images/anime/1062/151911.webp",
+            "small_image_url": "https://myanimelist.net/images/anime/1062/151911t.webp",
+            "large_image_url": "https://myanimelist.net/images/anime/1062/151911l.webp"
+          }
+        },
+        "trailer": {
+          "youtube_id": null,
+          "url": null,
+          "embed_url": "https://www.youtube-nocookie.com/embed/GcRs1JC7xeg?enablejsapi=1&wmode=opaque&autoplay=1",
+          "images": {
+            "image_url": null,
+            "small_image_url": null,
+            "medium_image_url": null,
+            "large_image_url": null,
+            "maximum_image_url": null
+          }
+        },
+        "approved": true,
+        "titles": [
+          {
+            "type": "Default",
+            "title": "Yuusha-kei ni Shosu: Choubatsu Yuusha 9004-tai Keimu Kiroku"
+          },
+          {
+            "type": "Synonym",
+            "title": "Sentenced to Brave Punishment"
+          },
+          {
+            "type": "Synonym",
+            "title": "Punishment for Brave Hero: 9004 Corps Prison Record"
+          },
+          {
+            "type": "Synonym",
+            "title": "Sentenced to Hero Punishment: The Service Records of the 9004th Penitent Hero Corps"
+          },
+          {
+            "type": "Synonym",
+            "title": "Hero Punishment"
+          },
+          {
+            "type": "Synonym",
+            "title": "Sentenced to Be a Hero: The Prison Records of Penal Hero Unit 9004"
+          },
+          {
+            "type": "Japanese",
+            "title": "勇者刑に処す 懲罰勇者9004隊刑務記録"
+          },
+          {
+            "type": "English",
+            "title": "Sentenced to Be a Hero"
+          }
+        ],
+        "title": "Yuusha-kei ni Shosu: Choubatsu Yuusha 9004-tai Keimu Kiroku",
+        "title_english": "Sentenced to Be a Hero",
+        "title_japanese": "勇者刑に処す 懲罰勇者9004隊刑務記録",
+        "title_synonyms": [
+          "Sentenced to Brave Punishment",
+          "Punishment for Brave Hero: 9004 Corps Prison Record",
+          "Sentenced to Hero Punishment: The Service Records of the 9004th Penitent Hero Corps",
+          "Hero Punishment",
+          "Sentenced to Be a Hero: The Prison Records of Penal Hero Unit 9004"
+        ],
+        "type": "TV",
+        "source": "Light novel",
+        "episodes": 12,
+        "status": "Currently Airing",
+        "airing": true,
+        "aired": {
+          "from": "2026-01-03T00:00:00+00:00",
+          "to": "2026-03-26T00:00:00+00:00",
+          "prop": {
+            "from": {
+              "day": 3,
+              "month": 1,
+              "year": 2026
+            },
+            "to": {
+              "day": 26,
+              "month": 3,
+              "year": 2026
+            }
+          },
+          "string": "Jan 3, 2026 to Mar 26, 2026"
+        },
+        "duration": "25 min per ep",
+        "rating": "R - 17+ (violence & profanity)",
+        "score": 8.15,
+        "scored_by": 44122,
+        "rank": 504,
+        "popularity": 1165,
+        "members": 240959,
+        "favorites": 1105,
+        "synopsis": "\"Hero\" is the worst punishment in the world. Those convicted of heinous crimes are sentenced to become \"Heroes\" and forced to enter the mandatory military service in the war against the Demon Lords. These convicts are not even allowed to die—if killed, they will be resurrected to fight another day.\n\nHero Xylo Forbartz, former head of the Order of the Holy Knights, leads a penal unit of deplorables fighting on the front lines. It is in these direst of circumstances that he meets Teoritta, one of the world's strongest weapons. \"When every last enemy has been defeated, you are to shower me with praise and pat my head.\" In order to survive and to take revenge on those who wronged him, he makes a pact with the goddess and launches headfirst into a maelstrom of war and intrigue.\n\n(Source: Official site, edited)",
+        "background": "",
+        "season": "winter",
+        "year": 2026,
+        "broadcast": {
+          "day": "Thursdays",
+          "time": "22:30",
+          "timezone": "Asia/Tokyo",
+          "string": "Thursdays at 22:30 (JST)"
+        },
+        "producers": [
+          {
+            "mal_id": 1345,
+            "type": "anime",
+            "name": "Sammy",
+            "url": "https://myanimelist.net/anime/producer/1345/Sammy"
+          },
+          {
+            "mal_id": 1412,
+            "type": "anime",
+            "name": "Kansai TV",
+            "url": "https://myanimelist.net/anime/producer/1412/Kansai_TV"
+          },
+          {
+            "mal_id": 2074,
+            "type": "anime",
+            "name": "Bit grooove promotion",
+            "url": "https://myanimelist.net/anime/producer/2074/Bit_grooove_promotion"
+          }
+        ],
+        "licensors": [],
+        "studios": [
+          {
+            "mal_id": 1997,
+            "type": "anime",
+            "name": "Studio KAI",
+            "url": "https://myanimelist.net/anime/producer/1997/Studio_KAI"
+          }
+        ],
+        "genres": [
+          {
+            "mal_id": 1,
+            "type": "anime",
+            "name": "Action",
+            "url": "https://myanimelist.net/anime/genre/1/Action"
+          },
+          {
+            "mal_id": 2,
+            "type": "anime",
+            "name": "Adventure",
+            "url": "https://myanimelist.net/anime/genre/2/Adventure"
+          },
+          {
+            "mal_id": 10,
+            "type": "anime",
+            "name": "Fantasy",
+            "url": "https://myanimelist.net/anime/genre/10/Fantasy"
+          }
+        ],
+        "explicit_genres": [],
+        "themes": [],
+        "demographics": []
+      },
+      "email": "onlyfornew15@gmail.com",
+      "animeId": 56009
+    },
+    {
+      "id": "c8ae",
+      "anime": {
+        "mal_id": 55825,
+        "url": "https://myanimelist.net/anime/55825/Jigokuraku_2nd_Season",
+        "images": {
+          "jpg": {
+            "image_url": "https://myanimelist.net/images/anime/1772/154456.jpg",
+            "small_image_url": "https://myanimelist.net/images/anime/1772/154456t.jpg",
+            "large_image_url": "https://myanimelist.net/images/anime/1772/154456l.jpg"
+          },
+          "webp": {
+            "image_url": "https://myanimelist.net/images/anime/1772/154456.webp",
+            "small_image_url": "https://myanimelist.net/images/anime/1772/154456t.webp",
+            "large_image_url": "https://myanimelist.net/images/anime/1772/154456l.webp"
+          }
+        },
+        "trailer": {
+          "youtube_id": null,
+          "url": null,
+          "embed_url": "https://www.youtube-nocookie.com/embed/kBnmkMngfak?enablejsapi=1&wmode=opaque&autoplay=1",
+          "images": {
+            "image_url": null,
+            "small_image_url": null,
+            "medium_image_url": null,
+            "large_image_url": null,
+            "maximum_image_url": null
+          }
+        },
+        "approved": true,
+        "titles": [
+          {
+            "type": "Default",
+            "title": "Jigokuraku 2nd Season"
+          },
+          {
+            "type": "Synonym",
+            "title": "Paradition"
+          },
+          {
+            "type": "Synonym",
+            "title": "Heavenhell"
+          },
+          {
+            "type": "Japanese",
+            "title": "地獄楽第二期"
+          },
+          {
+            "type": "English",
+            "title": "Hell's Paradise Season 2"
+          }
+        ],
+        "title": "Jigokuraku 2nd Season",
+        "title_english": "Hell's Paradise Season 2",
+        "title_japanese": "地獄楽第二期",
+        "title_synonyms": [
+          "Paradition",
+          "Heavenhell"
+        ],
+        "type": "TV",
+        "source": "Manga",
+        "episodes": 12,
+        "status": "Currently Airing",
+        "airing": true,
+        "aired": {
+          "from": "2026-01-11T00:00:00+00:00",
+          "to": "2026-03-29T00:00:00+00:00",
+          "prop": {
+            "from": {
+              "day": 11,
+              "month": 1,
+              "year": 2026
+            },
+            "to": {
+              "day": 29,
+              "month": 3,
+              "year": 2026
+            }
+          },
+          "string": "Jan 11, 2026 to Mar 29, 2026"
+        },
+        "duration": "24 min per ep",
+        "rating": "R - 17+ (violence & profanity)",
+        "score": 8.24,
+        "scored_by": 33749,
+        "rank": 375,
+        "popularity": 882,
+        "members": 317870,
+        "favorites": 2635,
+        "synopsis": "Seeking the key to the elixir of immortality, the group arrives at the fortress of the island's monstrous ruler, the \"Tensen.\" To survive and escape the island, cooperation becomes essential—regardless of whether one is a condemned criminal or an executioner.\n\nMeanwhile, the shogunate orders additional landings on the island of the Immortal Realm, led by Shugen Yamada Asayemon. Among them are the Ishigakure clan, who share a past with Gabimaru.\n\nDesperate to find the elixir and escape the island, Gabimaru and his companions face the Tensen in a battle that escalates into an all-out confrontation between humans and immortals!\n\n(Source: Twin Engine, edited)",
+        "background": "",
+        "season": "winter",
+        "year": 2026,
+        "broadcast": {
+          "day": "Sundays",
+          "time": "23:45",
+          "timezone": "Asia/Tokyo",
+          "string": "Sundays at 23:45 (JST)"
+        },
+        "producers": [
+          {
+            "mal_id": 769,
+            "type": "anime",
+            "name": "Fujipacific Music",
+            "url": "https://myanimelist.net/anime/producer/769/Fujipacific_Music"
+          },
+          {
+            "mal_id": 1747,
+            "type": "anime",
+            "name": "Twin Engine",
+            "url": "https://myanimelist.net/anime/producer/1747/Twin_Engine"
+          },
+          {
+            "mal_id": 1856,
+            "type": "anime",
+            "name": "dugout",
+            "url": "https://myanimelist.net/anime/producer/1856/dugout"
+          }
+        ],
+        "licensors": [],
+        "studios": [
+          {
+            "mal_id": 569,
+            "type": "anime",
+            "name": "MAPPA",
+            "url": "https://myanimelist.net/anime/producer/569/MAPPA"
+          }
+        ],
+        "genres": [
+          {
+            "mal_id": 1,
+            "type": "anime",
+            "name": "Action",
+            "url": "https://myanimelist.net/anime/genre/1/Action"
+          },
+          {
+            "mal_id": 2,
+            "type": "anime",
+            "name": "Adventure",
+            "url": "https://myanimelist.net/anime/genre/2/Adventure"
+          },
+          {
+            "mal_id": 37,
+            "type": "anime",
+            "name": "Supernatural",
+            "url": "https://myanimelist.net/anime/genre/37/Supernatural"
+          }
+        ],
+        "explicit_genres": [],
+        "themes": [
+          {
+            "mal_id": 58,
+            "type": "anime",
+            "name": "Gore",
+            "url": "https://myanimelist.net/anime/genre/58/Gore"
+          },
+          {
+            "mal_id": 13,
+            "type": "anime",
+            "name": "Historical",
+            "url": "https://myanimelist.net/anime/genre/13/Historical"
+          },
+          {
+            "mal_id": 21,
+            "type": "anime",
+            "name": "Samurai",
+            "url": "https://myanimelist.net/anime/genre/21/Samurai"
+          }
+        ],
+        "demographics": [
+          {
+            "mal_id": 27,
+            "type": "anime",
+            "name": "Shounen",
+            "url": "https://myanimelist.net/anime/genre/27/Shounen"
+          }
+        ]
+      },
+      "email": "onlyfornew15@gmail.com",
+      "animeId": 55825
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
