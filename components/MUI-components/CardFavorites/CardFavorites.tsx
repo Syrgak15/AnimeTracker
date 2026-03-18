@@ -10,12 +10,14 @@ import GradeIcon from '@mui/icons-material/Grade';
 import GroupsIcon from '@mui/icons-material/Groups';
 import Genre from "@/components/MainPageComponents/Genre/Genre";
 import {FavoriteAnimeList} from "@/types/FavoriteAnimeList";
+import AddToFavorites from "@/components/MainPageComponents/AddToFavorites/AddToFavorites";
+import DeleteFromFavorites from "@/components/ProfileComponents/DeleteFromFavorites/DeleteFromFavorites";
 
 interface AnimeListProps {
-    anime: FavoriteAnimeList;
+    favorite: AnimeListType;
 }
 
-export default function ImgMediaCard({anime}: AnimeListProps) {
+export default function ImgMediaCard({favorite}: AnimeListProps) {
 
     return (
         <Card sx={{
@@ -34,10 +36,21 @@ export default function ImgMediaCard({anime}: AnimeListProps) {
             <CardMedia
                 sx={{position: 'relative'}}
                 component="img"
-                alt={anime.title}
+                alt={favorite.anime.title}
                 height="400"
-                image={anime.images}
+                image={favorite.anime.images.jpg.large_image_url}
             />
+
+            <Typography
+                sx={{
+                    position: 'absolute',
+                    top: '9px',
+                    left: '7px',
+                    color: 'rgb(154 59 59 / 96%)'
+                }}
+            >
+                <DeleteFromFavorites id={favorite.animeId}/>
+            </Typography>
 
             <Typography
                 sx={{
@@ -50,7 +63,7 @@ export default function ImgMediaCard({anime}: AnimeListProps) {
                     fontSize: "13px"
                 }}
             >
-                Ep {anime.episodes}
+                Ep {favorite.anime.episodes}
             </Typography>
 
             <Container>
@@ -65,7 +78,7 @@ export default function ImgMediaCard({anime}: AnimeListProps) {
                     height: "80px"
                 }}>
                     <Typography gutterBottom variant="h5" component="div" sx={{fontFamily: "var(--ffamily)"}}>
-                        {anime.title}
+                        {favorite.anime.title}
                     </Typography>
                 </CardContent>
 
@@ -81,32 +94,32 @@ export default function ImgMediaCard({anime}: AnimeListProps) {
                                     sx={{fontSize: '17px'}}
                                     fontSize="small"/>
                             </Box>
-                            {anime.score}
+                            {favorite.anime.score}
                         </Typography>
 
-                        {/*<Typography*/}
-                        {/*    gutterBottom variant="h5"*/}
-                        {/*    component="div"*/}
-                        {/*    sx={{display: 'flex', alignItems: "center", gap: "5px", color: '#f6fff3', fontSize: '17px', fontFamily: "var(--ffamily)"}}>*/}
-                        {/*    {anime.aired.prop.from.year} Year*/}
-                        {/*</Typography>*/}
+                        <Typography
+                            gutterBottom variant="h5"
+                            component="div"
+                            sx={{display: 'flex', alignItems: "center", gap: "5px", color: '#f6fff3', fontSize: '17px', fontFamily: "var(--ffamily)"}}>
+                            {favorite.anime.aired.prop.from.year} Year
+                        </Typography>
                     </CardActions>
                 </Box>
 
-                {/*<Box*/}
-                {/*    sx={{display: 'flex', gap: '5px'}}*/}
-                {/*>*/}
-                {/*    {anime.genres?.slice(0, 2).map((genre, id) => (*/}
-                {/*        <span key={id}>*/}
-                {/*            <Genre name={genre.name}/>*/}
-                {/*        </span>*/}
-                {/*    ))}*/}
-                {/*    {anime.genres?.length > 2 && (*/}
-                {/*        <span>*/}
-                {/*            <Genre name={`+${anime.genres.length - 2}`}/>*/}
-                {/*        </span>*/}
-                {/*    )}*/}
-                {/*</Box>*/}
+                <Box
+                    sx={{display: 'flex', gap: '5px'}}
+                >
+                    {favorite.anime.genres?.slice(0, 2).map((genre, id) => (
+                        <span key={id}>
+                            <Genre name={genre.name}/>
+                        </span>
+                    ))}
+                    {favorite.anime.genres?.length > 2 && (
+                        <span>
+                            <Genre name={`+${favorite.anime.genres.length - 2}`}/>
+                        </span>
+                    )}
+                </Box>
             </Container>
         </Card>
     );

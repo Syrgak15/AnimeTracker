@@ -1,26 +1,26 @@
 {
   "favorites": [
     {
-      "id": "f0c8",
+      "id": "391b",
       "anime": {
-        "mal_id": 56009,
-        "url": "https://myanimelist.net/anime/56009/Yuusha-kei_ni_Shosu__Choubatsu_Yuusha_9004-tai_Keimu_Kiroku",
+        "mal_id": 57658,
+        "url": "https://myanimelist.net/anime/57658/Jujutsu_Kaisen__Shimetsu_Kaiyuu_-_Zenpen",
         "images": {
           "jpg": {
-            "image_url": "https://myanimelist.net/images/anime/1062/151911.jpg",
-            "small_image_url": "https://myanimelist.net/images/anime/1062/151911t.jpg",
-            "large_image_url": "https://myanimelist.net/images/anime/1062/151911l.jpg"
+            "image_url": "https://myanimelist.net/images/anime/1659/154920.jpg",
+            "small_image_url": "https://myanimelist.net/images/anime/1659/154920t.jpg",
+            "large_image_url": "https://myanimelist.net/images/anime/1659/154920l.jpg"
           },
           "webp": {
-            "image_url": "https://myanimelist.net/images/anime/1062/151911.webp",
-            "small_image_url": "https://myanimelist.net/images/anime/1062/151911t.webp",
-            "large_image_url": "https://myanimelist.net/images/anime/1062/151911l.webp"
+            "image_url": "https://myanimelist.net/images/anime/1659/154920.webp",
+            "small_image_url": "https://myanimelist.net/images/anime/1659/154920t.webp",
+            "large_image_url": "https://myanimelist.net/images/anime/1659/154920l.webp"
           }
         },
         "trailer": {
           "youtube_id": null,
           "url": null,
-          "embed_url": "https://www.youtube-nocookie.com/embed/GcRs1JC7xeg?enablejsapi=1&wmode=opaque&autoplay=1",
+          "embed_url": "https://www.youtube-nocookie.com/embed/ruX3rIj3--w?enablejsapi=1&wmode=opaque&autoplay=1",
           "images": {
             "image_url": null,
             "small_image_url": null,
@@ -33,114 +33,112 @@
         "titles": [
           {
             "type": "Default",
-            "title": "Yuusha-kei ni Shosu: Choubatsu Yuusha 9004-tai Keimu Kiroku"
+            "title": "Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen"
           },
           {
             "type": "Synonym",
-            "title": "Sentenced to Brave Punishment"
-          },
-          {
-            "type": "Synonym",
-            "title": "Punishment for Brave Hero: 9004 Corps Prison Record"
-          },
-          {
-            "type": "Synonym",
-            "title": "Sentenced to Hero Punishment: The Service Records of the 9004th Penitent Hero Corps"
-          },
-          {
-            "type": "Synonym",
-            "title": "Hero Punishment"
-          },
-          {
-            "type": "Synonym",
-            "title": "Sentenced to Be a Hero: The Prison Records of Penal Hero Unit 9004"
+            "title": "Jujutsu Kaisen 3rd Season"
           },
           {
             "type": "Japanese",
-            "title": "勇者刑に処す 懲罰勇者9004隊刑務記録"
+            "title": "呪術廻戦 「死滅回游 前編」"
           },
           {
             "type": "English",
-            "title": "Sentenced to Be a Hero"
+            "title": "Jujutsu Kaisen: The Culling Game Part 1"
           }
         ],
-        "title": "Yuusha-kei ni Shosu: Choubatsu Yuusha 9004-tai Keimu Kiroku",
-        "title_english": "Sentenced to Be a Hero",
-        "title_japanese": "勇者刑に処す 懲罰勇者9004隊刑務記録",
+        "title": "Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen",
+        "title_english": "Jujutsu Kaisen: The Culling Game Part 1",
+        "title_japanese": "呪術廻戦 「死滅回游 前編」",
         "title_synonyms": [
-          "Sentenced to Brave Punishment",
-          "Punishment for Brave Hero: 9004 Corps Prison Record",
-          "Sentenced to Hero Punishment: The Service Records of the 9004th Penitent Hero Corps",
-          "Hero Punishment",
-          "Sentenced to Be a Hero: The Prison Records of Penal Hero Unit 9004"
+          "Jujutsu Kaisen 3rd Season"
         ],
         "type": "TV",
-        "source": "Light novel",
+        "source": "Manga",
         "episodes": 12,
         "status": "Currently Airing",
         "airing": true,
         "aired": {
-          "from": "2026-01-03T00:00:00+00:00",
-          "to": "2026-03-26T00:00:00+00:00",
+          "from": "2026-01-09T00:00:00+00:00",
+          "to": "2026-03-27T00:00:00+00:00",
           "prop": {
             "from": {
-              "day": 3,
+              "day": 9,
               "month": 1,
               "year": 2026
             },
             "to": {
-              "day": 26,
+              "day": 27,
               "month": 3,
               "year": 2026
             }
           },
-          "string": "Jan 3, 2026 to Mar 26, 2026"
+          "string": "Jan 9, 2026 to Mar 27, 2026"
         },
-        "duration": "25 min per ep",
+        "duration": "23 min per ep",
         "rating": "R - 17+ (violence & profanity)",
-        "score": 8.15,
-        "scored_by": 44122,
-        "rank": 504,
-        "popularity": 1165,
-        "members": 240959,
-        "favorites": 1105,
-        "synopsis": "\"Hero\" is the worst punishment in the world. Those convicted of heinous crimes are sentenced to become \"Heroes\" and forced to enter the mandatory military service in the war against the Demon Lords. These convicts are not even allowed to die—if killed, they will be resurrected to fight another day.\n\nHero Xylo Forbartz, former head of the Order of the Holy Knights, leads a penal unit of deplorables fighting on the front lines. It is in these direst of circumstances that he meets Teoritta, one of the world's strongest weapons. \"When every last enemy has been defeated, you are to shower me with praise and pat my head.\" In order to survive and to take revenge on those who wronged him, he makes a pact with the goddess and launches headfirst into a maelstrom of war and intrigue.\n\n(Source: Official site, edited)",
+        "score": 8.59,
+        "scored_by": 66357,
+        "rank": 112,
+        "popularity": 692,
+        "members": 390450,
+        "favorites": 2457,
+        "synopsis": "Kenjaku, the one known as Noritoshi Kamo and most recently as Suguru Getou, has initiated the next step in his destructive, thousand-year plan of ordinary humans' evolution and eventual eradication. The jujutsu world higher-ups reinstate 15-year-old Yuuji Itadori's execution, as Satoru Gojou is incapacitated as a result of Kenjaku's master plan in Shibuya. While Yuuji is unaware of this, he patrols the abandoned Tokyo streets with Chousou, exterminating any and all cursed spirits in his way.\n\nMeanwhile, the bigoted and arrogant Naoya Zenin's pride takes a hit when Megumi Fushiguro is selected as the Zenin Clan's next head. To draw out Megumi and eliminate him, he goes after Yuuji—but Yuuta Okkotsu is set on being Yuuji's executioner. Kenjaku's \"Culling Game\"—a rigorous battle royale spanning throughout Japan and forcing the jujutsu competitors to kill each other—is set in motion, and the young jujutsu sorcerers join the fray to settle old scores, free Gojou, and liberate the jujutsu world from the threat that is Kenjaku.\n\n[Written by MAL Rewrite]",
         "background": "",
         "season": "winter",
         "year": 2026,
         "broadcast": {
-          "day": "Thursdays",
-          "time": "22:30",
+          "day": "Fridays",
+          "time": "00:26",
           "timezone": "Asia/Tokyo",
-          "string": "Thursdays at 22:30 (JST)"
+          "string": "Fridays at 00:26 (JST)"
         },
         "producers": [
           {
-            "mal_id": 1345,
+            "mal_id": 143,
             "type": "anime",
-            "name": "Sammy",
-            "url": "https://myanimelist.net/anime/producer/1345/Sammy"
+            "name": "Mainichi Broadcasting System",
+            "url": "https://myanimelist.net/anime/producer/143/Mainichi_Broadcasting_System"
           },
           {
-            "mal_id": 1412,
+            "mal_id": 1143,
             "type": "anime",
-            "name": "Kansai TV",
-            "url": "https://myanimelist.net/anime/producer/1412/Kansai_TV"
+            "name": "TOHO animation",
+            "url": "https://myanimelist.net/anime/producer/1143/TOHO_animation"
           },
           {
-            "mal_id": 2074,
+            "mal_id": 1365,
             "type": "anime",
-            "name": "Bit grooove promotion",
-            "url": "https://myanimelist.net/anime/producer/2074/Bit_grooove_promotion"
+            "name": "Shueisha",
+            "url": "https://myanimelist.net/anime/producer/1365/Shueisha"
+          },
+          {
+            "mal_id": 1856,
+            "type": "anime",
+            "name": "dugout",
+            "url": "https://myanimelist.net/anime/producer/1856/dugout"
+          },
+          {
+            "mal_id": 2229,
+            "type": "anime",
+            "name": "Toho Music",
+            "url": "https://myanimelist.net/anime/producer/2229/Toho_Music"
+          },
+          {
+            "mal_id": 2260,
+            "type": "anime",
+            "name": "Sumzap",
+            "url": "https://myanimelist.net/anime/producer/2260/Sumzap"
           }
         ],
         "licensors": [],
         "studios": [
           {
-            "mal_id": 1997,
+            "mal_id": 569,
             "type": "anime",
-            "name": "Studio KAI",
-            "url": "https://myanimelist.net/anime/producer/1997/Studio_KAI"
+            "name": "MAPPA",
+            "url": "https://myanimelist.net/anime/producer/569/MAPPA"
           }
         ],
         "genres": [
@@ -151,197 +149,28 @@
             "url": "https://myanimelist.net/anime/genre/1/Action"
           },
           {
-            "mal_id": 2,
+            "mal_id": 37,
             "type": "anime",
-            "name": "Adventure",
-            "url": "https://myanimelist.net/anime/genre/2/Adventure"
-          },
-          {
-            "mal_id": 10,
-            "type": "anime",
-            "name": "Fantasy",
-            "url": "https://myanimelist.net/anime/genre/10/Fantasy"
+            "name": "Supernatural",
+            "url": "https://myanimelist.net/anime/genre/37/Supernatural"
           }
         ],
         "explicit_genres": [],
         "themes": [],
-        "demographics": []
+        "demographics": [
+          {
+            "mal_id": 27,
+            "type": "anime",
+            "name": "Shounen",
+            "url": "https://myanimelist.net/anime/genre/27/Shounen"
+          }
+        ]
       },
       "email": "onlyfornew15@gmail.com",
-      "animeId": 56009
+      "animeId": 57658
     },
     {
-      "id": "c52c",
-      "anime": {
-        "mal_id": 56009,
-        "url": "https://myanimelist.net/anime/56009/Yuusha-kei_ni_Shosu__Choubatsu_Yuusha_9004-tai_Keimu_Kiroku",
-        "images": {
-          "jpg": {
-            "image_url": "https://myanimelist.net/images/anime/1062/151911.jpg",
-            "small_image_url": "https://myanimelist.net/images/anime/1062/151911t.jpg",
-            "large_image_url": "https://myanimelist.net/images/anime/1062/151911l.jpg"
-          },
-          "webp": {
-            "image_url": "https://myanimelist.net/images/anime/1062/151911.webp",
-            "small_image_url": "https://myanimelist.net/images/anime/1062/151911t.webp",
-            "large_image_url": "https://myanimelist.net/images/anime/1062/151911l.webp"
-          }
-        },
-        "trailer": {
-          "youtube_id": null,
-          "url": null,
-          "embed_url": "https://www.youtube-nocookie.com/embed/GcRs1JC7xeg?enablejsapi=1&wmode=opaque&autoplay=1",
-          "images": {
-            "image_url": null,
-            "small_image_url": null,
-            "medium_image_url": null,
-            "large_image_url": null,
-            "maximum_image_url": null
-          }
-        },
-        "approved": true,
-        "titles": [
-          {
-            "type": "Default",
-            "title": "Yuusha-kei ni Shosu: Choubatsu Yuusha 9004-tai Keimu Kiroku"
-          },
-          {
-            "type": "Synonym",
-            "title": "Sentenced to Brave Punishment"
-          },
-          {
-            "type": "Synonym",
-            "title": "Punishment for Brave Hero: 9004 Corps Prison Record"
-          },
-          {
-            "type": "Synonym",
-            "title": "Sentenced to Hero Punishment: The Service Records of the 9004th Penitent Hero Corps"
-          },
-          {
-            "type": "Synonym",
-            "title": "Hero Punishment"
-          },
-          {
-            "type": "Synonym",
-            "title": "Sentenced to Be a Hero: The Prison Records of Penal Hero Unit 9004"
-          },
-          {
-            "type": "Japanese",
-            "title": "勇者刑に処す 懲罰勇者9004隊刑務記録"
-          },
-          {
-            "type": "English",
-            "title": "Sentenced to Be a Hero"
-          }
-        ],
-        "title": "Yuusha-kei ni Shosu: Choubatsu Yuusha 9004-tai Keimu Kiroku",
-        "title_english": "Sentenced to Be a Hero",
-        "title_japanese": "勇者刑に処す 懲罰勇者9004隊刑務記録",
-        "title_synonyms": [
-          "Sentenced to Brave Punishment",
-          "Punishment for Brave Hero: 9004 Corps Prison Record",
-          "Sentenced to Hero Punishment: The Service Records of the 9004th Penitent Hero Corps",
-          "Hero Punishment",
-          "Sentenced to Be a Hero: The Prison Records of Penal Hero Unit 9004"
-        ],
-        "type": "TV",
-        "source": "Light novel",
-        "episodes": 12,
-        "status": "Currently Airing",
-        "airing": true,
-        "aired": {
-          "from": "2026-01-03T00:00:00+00:00",
-          "to": "2026-03-26T00:00:00+00:00",
-          "prop": {
-            "from": {
-              "day": 3,
-              "month": 1,
-              "year": 2026
-            },
-            "to": {
-              "day": 26,
-              "month": 3,
-              "year": 2026
-            }
-          },
-          "string": "Jan 3, 2026 to Mar 26, 2026"
-        },
-        "duration": "25 min per ep",
-        "rating": "R - 17+ (violence & profanity)",
-        "score": 8.15,
-        "scored_by": 44122,
-        "rank": 504,
-        "popularity": 1165,
-        "members": 240959,
-        "favorites": 1105,
-        "synopsis": "\"Hero\" is the worst punishment in the world. Those convicted of heinous crimes are sentenced to become \"Heroes\" and forced to enter the mandatory military service in the war against the Demon Lords. These convicts are not even allowed to die—if killed, they will be resurrected to fight another day.\n\nHero Xylo Forbartz, former head of the Order of the Holy Knights, leads a penal unit of deplorables fighting on the front lines. It is in these direst of circumstances that he meets Teoritta, one of the world's strongest weapons. \"When every last enemy has been defeated, you are to shower me with praise and pat my head.\" In order to survive and to take revenge on those who wronged him, he makes a pact with the goddess and launches headfirst into a maelstrom of war and intrigue.\n\n(Source: Official site, edited)",
-        "background": "",
-        "season": "winter",
-        "year": 2026,
-        "broadcast": {
-          "day": "Thursdays",
-          "time": "22:30",
-          "timezone": "Asia/Tokyo",
-          "string": "Thursdays at 22:30 (JST)"
-        },
-        "producers": [
-          {
-            "mal_id": 1345,
-            "type": "anime",
-            "name": "Sammy",
-            "url": "https://myanimelist.net/anime/producer/1345/Sammy"
-          },
-          {
-            "mal_id": 1412,
-            "type": "anime",
-            "name": "Kansai TV",
-            "url": "https://myanimelist.net/anime/producer/1412/Kansai_TV"
-          },
-          {
-            "mal_id": 2074,
-            "type": "anime",
-            "name": "Bit grooove promotion",
-            "url": "https://myanimelist.net/anime/producer/2074/Bit_grooove_promotion"
-          }
-        ],
-        "licensors": [],
-        "studios": [
-          {
-            "mal_id": 1997,
-            "type": "anime",
-            "name": "Studio KAI",
-            "url": "https://myanimelist.net/anime/producer/1997/Studio_KAI"
-          }
-        ],
-        "genres": [
-          {
-            "mal_id": 1,
-            "type": "anime",
-            "name": "Action",
-            "url": "https://myanimelist.net/anime/genre/1/Action"
-          },
-          {
-            "mal_id": 2,
-            "type": "anime",
-            "name": "Adventure",
-            "url": "https://myanimelist.net/anime/genre/2/Adventure"
-          },
-          {
-            "mal_id": 10,
-            "type": "anime",
-            "name": "Fantasy",
-            "url": "https://myanimelist.net/anime/genre/10/Fantasy"
-          }
-        ],
-        "explicit_genres": [],
-        "themes": [],
-        "demographics": []
-      },
-      "email": "onlyfornew15@gmail.com",
-      "animeId": 56009
-    },
-    {
-      "id": "c8ae",
+      "id": "57b3",
       "anime": {
         "mal_id": 55825,
         "url": "https://myanimelist.net/anime/55825/Jigokuraku_2nd_Season",

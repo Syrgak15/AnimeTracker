@@ -60,7 +60,6 @@ export default function CustomizedInputBase({ animeLists, limitedAnimeLists }: A
 
     return <>
         <div className="anime-list">
-            <div className="anime-liscdt__container">
                 <Paper
                     component="form"
                     sx={{
@@ -100,9 +99,8 @@ export default function CustomizedInputBase({ animeLists, limitedAnimeLists }: A
                         className="anime-list__title-icon"
                         sx={{ marginRight: "5px", color: "#48b282" }}
                     />
-                    <span>
+
                     {tabsConfig[activeTab].title}
-                </span>
                 </div>
 
                 <div className="anime-grid">
@@ -115,9 +113,7 @@ export default function CustomizedInputBase({ animeLists, limitedAnimeLists }: A
                     ) : (
                         <span>No anime found matching your search.</span>
                     ) }
-
                 </div>
-            </div>
         </div>
     </>
 }

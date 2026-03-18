@@ -20,6 +20,6 @@ export default async function Favorites() {
     const result = await getFavoriteAnimes(userEmail);
 
     return (
-        <FavoritesPageClient anime={result}/>
+        <FavoritesPageClient animes={result}/>
     )
 }

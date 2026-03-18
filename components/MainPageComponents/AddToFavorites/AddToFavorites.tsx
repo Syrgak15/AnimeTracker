@@ -15,48 +15,40 @@ interface AnimeListProps {
 }
 
 export default function AddToFavorites({anime}: AnimeListProps) {
-    const [isClicked, setIsClicked] = useState<boolean>(false);
     const [favorite, setFavorite] = useState<AnimeListType[]>([])
     const {data: session} = useSession();
-    const userEmail =  String(session?.user?.email);
+    const userEmail = session?.user?.email;
 
     useEffect( () => {
-        if(!userEmail || !anime) return;
+        if(!userEmail) return;
 
         const getData = async () => {
             const res = await getFavorites(userEmail);
             setFavorite(res);
-            const existingAnime = favorite.some(item => item.mal_id === anime.mal_id);
-            setIsClicked(existingAnime);
         }
+
         getData()
-    }, [userEmail, anime?.mal_id]);
+    }, [userEmail]);
 
-
+    const isFavorite = favorite.some(item => item.animeId === anime.mal_id);
 
     const toggleFavorite = async (e: React.MouseEvent) => {
         e.preventDefault();
-
         if (!userEmail) return;
 
-        const existingAnime = favorite.find(item => item.mal_id === anime.mal_id);
-
-        if (existingAnime) {
+        if (isFavorite) {
             await deleteFromFavorites(anime.mal_id, userEmail);
-            setFavorite(prev => prev.filter(item => item.id !== existingAnime.id));
-            setIsClicked(false);
-
+            setFavorite(prev => prev.filter(item => item.animeId !== isFavorite.animeId));
         } else {
             await addToFavorites(anime, userEmail, anime.mal_id);
             setFavorite(prev => [...prev, { ...anime, email: userEmail, animeId: anime.mal_id }]);
-            setIsClicked(true);
         }
     };
 
     return (
         <>
             <div style={{display: 'inline-block', cursor: 'pointer'}} onClick={toggleFavorite}>
-                {isClicked ? <FavoriteIcon/> : <FavoriteBorderIcon/>}
+                {isFavorite ? <FavoriteIcon/> : <FavoriteBorderIcon/>}
             </div>
         </>
     )

@@ -59,7 +59,7 @@ export default function ImgMediaCard({ anime }: AnimeListProps) {
                     color: 'rgb(161 247 5 / 96%)'
                 }}
             >
-                <AddToFavorites/>
+                <AddToFavorites anime={anime}/>
             </Typography>
 
             <Container>

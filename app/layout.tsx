@@ -24,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
       <SessionProvider>
-          <html lang="en" className={play.className}>
+          <html lang="en" className={play.className} suppressHydrationWarning={true}>
           <body>
           <Header/>
           {/*<Banner/>*/}
