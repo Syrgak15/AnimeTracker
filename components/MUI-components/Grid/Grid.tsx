@@ -1,8 +1,6 @@
 "use client"
 
-import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import Card from "../Card/Card";
 import {AnimeListType} from "@/types/AnimeListType";
@@ -11,17 +9,6 @@ import Link from 'next/link';
 interface AnimeListProps {
     animeLists: AnimeListType[];
 }
-
-const Item = styled(Paper)(({ theme }) => ({
-    backgroundColor: '#fff',
-    ...theme.typography.body2,
-    padding: theme.spacing(2),
-    textAlign: 'center',
-    color: (theme.vars ?? theme).palette.text.secondary,
-    ...theme.applyStyles('dark', {
-        backgroundColor: '#1A2027',
-    }),
-}));
 
 export default function ResponsiveGrid({animeLists}: AnimeListProps) {
 
@@ -38,7 +25,7 @@ export default function ResponsiveGrid({animeLists}: AnimeListProps) {
                                 style={{ textDecoration: 'none' }}
                                 href={`/anime/${anime.mal_id}`}
                             >
-                                <Card anime={anime} />
+                                <Card anime={anime}/>
                             </Link>
                         </Grid>
                 ))}

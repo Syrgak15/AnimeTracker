@@ -2,21 +2,23 @@
 
 import "./style.css"
 import Skeleton from "@/components/MUI-components/Skeleton/Skeleton";
-import { useSession } from 'next-auth/react';
+import {useSession} from 'next-auth/react';
 import {AnimeListType} from "@/types/AnimeListType";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import CardFavorites from "@/components/MUI-components/CardFavorites/CardFavorites";
 import Link from "next/link";
 import {useEffect, useState} from "react";
+import EmptyState from "@/components/ProfileComponents/EmptyState/EmptyState";
 
 interface AnimeProp {
     animes: AnimeListType[];
 }
 
-export default function Favorites({animes} : AnimeProp) {
+export default function Favorites({animes}: AnimeProp) {
     const {data: session, status} = useSession();
-    const [animeList, setAnimeList] = useState<AnimeListType[]>([]);
+    const [animeList, setAnimeList] = useState<AnimeListType[]>(animes);
+
 
     if (status === "loading") {
         return (
@@ -24,7 +26,7 @@ export default function Favorites({animes} : AnimeProp) {
         )
     }
 
-    if(status !== "authenticated") {
+    if (status !== "authenticated") {
         return (
             <p>You are not authorized to view this page!</p>
         )
@@ -36,28 +38,36 @@ export default function Favorites({animes} : AnimeProp) {
                 <div className="favorites__title">
                     <span>My Favorites List</span>
                 </div>
-                <div className="favorites__subtitle">
-                    <p>All anime added to your favorites</p>
-                </div>
-                <div className="favorites__grid">
-                    <Box sx={{ flexGrow: 1 }}>
-                        <Grid
-                            container
-                            spacing={{ xs: 2, md: 5 }}
-                            columns={{ xs: 4, sm: 8, md: 12 }}
-                        >
-                            {animes?.map((anime, index) => (
-                                <Grid key={index} size={{ xs: 2, sm: 4, md: 4, lg: 12/5 }} >
-                                    <Link
-                                        style={{ textDecoration: 'none' }}
-                                        href={`/anime/${anime.animeId}`}
+                <div>
+                    {animeList.length !== 0 ? (
+                        <>
+                            <div className="favorites__subtitle">
+                                <p>All anime added to your favorites</p>
+                            </div>
+                            <div className="favorites__grid">
+                                <Box sx={{flexGrow: 1}}>
+                                    <Grid
+                                        container
+                                        spacing={{xs: 2, md: 5}}
+                                        columns={{xs: 4, sm: 8, md: 12}}
                                     >
-                                        <CardFavorites favorite={anime}/>
-                                    </Link>
-                                </Grid>
-                            ))}
-                        </Grid>
-                    </Box>
+                                        {animeList?.map((anime, index) => (
+                                            <Grid key={anime.animeId} size={{xs: 2, sm: 4, md: 4, lg: 12 / 5}}>
+                                                <Link
+                                                    style={{textDecoration: 'none'}}
+                                                    href={`/anime/${anime.animeId}`}
+                                                >
+                                                    <CardFavorites favorite={anime} setAnimeList={setAnimeList}/>
+                                                </Link>
+                                            </Grid>
+                                        ))}
+                                    </Grid>
+                                </Box>
+                            </div>
+                        </>
+                    ) : (
+                        <EmptyState/>
+                    )}
                 </div>
             </div>
         </div>

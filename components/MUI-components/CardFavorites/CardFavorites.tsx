@@ -15,9 +15,10 @@ import DeleteFromFavorites from "@/components/ProfileComponents/DeleteFromFavori
 
 interface AnimeListProps {
     favorite: AnimeListType;
+    setAnimeList: React.Dispatch<React.SetStateAction<any[]>>;
 }
 
-export default function ImgMediaCard({favorite}: AnimeListProps) {
+export default function ImgMediaCard({favorite, setAnimeList}: AnimeListProps) {
 
     return (
         <Card sx={{
@@ -49,7 +50,7 @@ export default function ImgMediaCard({favorite}: AnimeListProps) {
                     color: 'rgb(154 59 59 / 96%)'
                 }}
             >
-                <DeleteFromFavorites id={favorite.animeId}/>
+                <DeleteFromFavorites id={favorite.animeId} setAnimeList={setAnimeList}/>
             </Typography>
 
             <Typography

@@ -26,9 +26,9 @@ export default function AddToFavorites({anime}: AnimeListProps) {
             const res = await getFavorites(userEmail);
             setFavorite(res);
         }
-
         getData()
     }, [userEmail]);
+
 
     const isFavorite = favorite.some(item => item.animeId === anime.mal_id);
 
@@ -38,7 +38,7 @@ export default function AddToFavorites({anime}: AnimeListProps) {
 
         if (isFavorite) {
             await deleteFromFavorites(anime.mal_id, userEmail);
-            setFavorite(prev => prev.filter(item => item.animeId !== isFavorite.animeId));
+            setFavorite(prev => prev.filter(item => item.animeId !== anime.mal_id));
         } else {
             await addToFavorites(anime, userEmail, anime.mal_id);
             setFavorite(prev => [...prev, { ...anime, email: userEmail, animeId: anime.mal_id }]);

@@ -50,11 +50,11 @@ export default function CustomizedInputBase({ animeLists, limitedAnimeLists }: A
     const tabsConfig = [
         {
             title: "Popular This Season",
-            data: filteredAnimeList
+            data: filteredAnimeList,
         },
         {
             title: "Upcoming Episodes",
-            data: filteredLimitedAnimeList
+            data: filteredLimitedAnimeList,
         }
     ];
 

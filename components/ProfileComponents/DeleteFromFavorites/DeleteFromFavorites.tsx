@@ -2,9 +2,15 @@ import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
 import {deleteFromFavorites} from "@/services/deleteFromFavorites";
 import {useSession} from "next-auth/react";
 
-export default function DeleteFromFavorites(id : number) {
+interface Props {
+    id: number,
+    setAnimeList: React.Dispatch<React.SetStateAction<any[]>>;
+}
+
+export default function DeleteFromFavorites({id, setAnimeList}: Props) {
     const {data: session} = useSession();
     const userEmail = String(session?.user?.email);
+    console.log(id)
 
     const handleClick = async(e: any) => {
         e.preventDefault();
@@ -15,8 +21,8 @@ export default function DeleteFromFavorites(id : number) {
             return;
         }
 
-       await deleteFromFavorites(id.id, userEmail);
-
+       await deleteFromFavorites(id, userEmail);
+       setAnimeList(prev => prev.filter(item => item.animeId !== id))
     }
 
     return (
