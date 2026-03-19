@@ -9,6 +9,8 @@ import "./style.css"
 import {addToFavorites} from "@/services/addToFavorites";
 import {deleteFromFavorites} from "@/services/deleteFromFavorites";
 import {getFavorites} from "@/services/getFavorites";
+import * as React from "react";
+import Modal from "@/components/MUI-components/Modal/Modal";
 
 interface AnimeListProps {
     anime: AnimeListType;
@@ -16,6 +18,10 @@ interface AnimeListProps {
 
 export default function AddToFavorites({anime}: AnimeListProps) {
     const [favorite, setFavorite] = useState<AnimeListType[]>([])
+    const [open, setOpen] = React.useState(false);
+    const handleOpen = () => setOpen(true);
+    const handleClose = () => setOpen(false);
+
     const {data: session} = useSession();
     const userEmail = session?.user?.email;
 
@@ -34,7 +40,12 @@ export default function AddToFavorites({anime}: AnimeListProps) {
 
     const toggleFavorite = async (e: React.MouseEvent) => {
         e.preventDefault();
-        if (!userEmail) return;
+        e.stopPropagation();
+
+        if (!userEmail) {
+            handleOpen();
+            return;
+        }
 
         if (isFavorite) {
             await deleteFromFavorites(anime.mal_id, userEmail);
@@ -50,6 +61,7 @@ export default function AddToFavorites({anime}: AnimeListProps) {
             <div style={{display: 'inline-block', cursor: 'pointer'}} onClick={toggleFavorite}>
                 {isFavorite ? <FavoriteIcon/> : <FavoriteBorderIcon/>}
             </div>
+            <Modal open={open} handleClose={handleClose}/>
         </>
     )
 }
