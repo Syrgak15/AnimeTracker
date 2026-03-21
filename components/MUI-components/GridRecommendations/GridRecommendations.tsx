@@ -12,28 +12,17 @@ interface AnimeListProps {
     recommendations: AnimeListType[];
 }
 
-const Item = styled(Paper)(({ theme }) => ({
-    backgroundColor: '#fff',
-    ...theme.typography.body2,
-    padding: theme.spacing(2),
-    textAlign: 'center',
-    color: (theme.vars ?? theme).palette.text.secondary,
-    ...theme.applyStyles('dark', {
-        backgroundColor: '#1A2027',
-    }),
-}));
-
 export default function ResponsiveGrid({recommendations}: AnimeListProps) {
 
     return (
-        <Box sx={{ flexGrow: 1 }}>
+        <Box sx={{ flexGrow: 1, justifyContent: "center" }}>
             <Grid
                 container
-                spacing={{ xs: 2, md: 5 }}
-                columns={{ xs: 4, sm: 8, md: 12 }}
+                spacing={{ xs: 3, sm: 2, md: 3, lg: 3 }}
+                columns={{ xs: 1, sm: 6, md: 12, lg: 15 }}
             >
                 {recommendations?.map((anime, index) => (
-                    <Grid key={index} size={{ xs: 2, sm: 4, md: 4, lg: 12/5 }} >
+                    <Grid key={index} size={{ xs: 12, sm: 3, md: 4, lg: 3 }} >
                         <Link
                             style={{ textDecoration: 'none' }}
                             href={`/anime/${anime.mal_id}`}

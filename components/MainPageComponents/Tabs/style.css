@@ -21,3 +21,12 @@
 .tabs .active {
     background: var(--bg-color);
 }
+
+/*Media Queries*/
+
+@media (min-width: 320px) and (max-width: 379px) {
+    .tabs .tab {
+        padding: 10px;
+        text-align: center;
+    }
+}

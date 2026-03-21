@@ -12,10 +12,10 @@
     }
 }
 .header-links {
-    justify-content: left;
+    justify-content: center;
     width: 100%;
     padding-bottom: 10px;
-    padding-left: 10px;
+    padding-left: 50px;
     display: flex;
     gap: 15px;
 }
@@ -33,10 +33,8 @@
 
 /*Media Queries*/
 
-@media (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 425px) {
     .header-links {
-        justify-content: center;
-        gap: 10px;
-        padding-left: unset;
+        padding-left: 65px;
     }
 }

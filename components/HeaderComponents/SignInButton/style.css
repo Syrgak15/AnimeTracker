@@ -1,16 +1,18 @@
 .user-info {
     width: max-content;
     position: relative;
+    display: flex;
+    gap: 20px;
 }
-.user-info.hidden {
-    display: none;
-}
-
-.user-info span {
-    color: var(--text-color);
+.user-info div {
     display: inline-block;
     padding-top: 8px;
+    padding-bottom: 15px;
     font-size: 15px;
     cursor: pointer;
     font-weight: bold;
+}
+.user-info div a {
+    text-decoration: none;
+    color: var(--text-color);
 }

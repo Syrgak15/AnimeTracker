@@ -6,7 +6,7 @@ import useScrollDirection from '@/hooks/useScrollDirection/useScrollDirection';
 import SignInButton from "@/components/HeaderComponents/SignInButton/SignInButton";
 
 export default function Header() {
-    const scrollDirection = useScrollDirection()
+    const scrollDirection = useScrollDirection();
     return (
         <div className={`header scroll-${scrollDirection}`}>
             <div className="header-links">

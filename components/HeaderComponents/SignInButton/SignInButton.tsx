@@ -6,24 +6,32 @@ import { useSession, signIn, signOut } from 'next-auth/react';
 import {useState} from "react";
 import { usePathname } from 'next/navigation';
 import UserDropDown from "@/components/HeaderComponents/UserDropDown/UserDropDown";
-
+import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import Link from "next/link";
 
 export default function SignInButton() {
     const { data: session} = useSession();
-    const [isClicked, setIsClicked] = useState<boolean>(false)
-    const pathname = usePathname();
-
-    const handleClick = () => {
-        setIsClicked(!isClicked)
-    }
 
     if (session) {
         return (
             <>
-                <div className={`user-info`} onClick={handleClick}>
-                    <span>{session.user?.name}</span>
+                <div className="user-info">
+                    <div>
+                        <Link
+                            href="/profile"
+                        >
+                            <PersonOutlineOutlinedIcon/>
+                        </Link>
+                    </div>
+                    <div>
+                        <Link
+                            href="/favorites"
+                        >
+                            <FavoriteBorderIcon/>
+                        </Link>
+                    </div>
                 </div>
-                {isClicked && <UserDropDown isClicked={isClicked} setIsClicked={setIsClicked}/>}
             </>
         );
     }

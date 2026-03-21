@@ -19,8 +19,8 @@ export default function ImgMediaCard({anime}: AnimeListProps) {
 
     return (
         <Card sx={{
-            maxWidth: 345,
-            height: 600,
+            maxWidth: "400px",
+            height: 610,
             backgroundColor: "#8ab37fde",
             color: "#FFF",
             fontWeight: "bold",
@@ -105,7 +105,7 @@ export default function ImgMediaCard({anime}: AnimeListProps) {
                 </Box>
 
                 <Box
-                    sx={{display: 'flex', gap: '5px'}}
+                    sx={{display: 'flex', gap: '5px', flexWrap: "wrap"}}
                 >
                     {anime.genres?.slice(0, 2).map((genre, id) => (
                         <span key={id}>

@@ -16,11 +16,11 @@ export default function ResponsiveGrid({animeLists}: AnimeListProps) {
         <Box sx={{ flexGrow: 1 }}>
             <Grid
                 container
-                spacing={{ xs: 2, md: 5 }}
-                columns={{ xs: 4, sm: 8, md: 12 }}
+                spacing={{ xs: 3, sm: 3, md: 3, lg: 3 }}
+                columns={{ xs: 1, sm: 6, md: 12, lg: 15 }}
             >
                 {animeLists?.map((anime, index) => (
-                        <Grid key={index} size={{ xs: 2, sm: 4, md: 4, lg: 12/5 }} >
+                        <Grid key={index} size={{ xs: 1, sm: 3, md: 4, lg: 3 }} >
                             <Link
                                 style={{ textDecoration: 'none' }}
                                 href={`/anime/${anime.mal_id}`}

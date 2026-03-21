@@ -22,7 +22,7 @@ export default function ImgMediaCard({favorite, setAnimeList}: AnimeListProps) {
 
     return (
         <Card sx={{
-            maxWidth: 345,
+            maxWidth: "400px",
             height: 600,
             backgroundColor: "#8ab37fde",
             color: "#FFF",
