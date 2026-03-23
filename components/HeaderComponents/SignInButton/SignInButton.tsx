@@ -3,9 +3,6 @@
 import "./style.css";
 import Button from "@mui/material/Button";
 import { useSession, signIn, signOut } from 'next-auth/react';
-import {useState} from "react";
-import { usePathname } from 'next/navigation';
-import UserDropDown from "@/components/HeaderComponents/UserDropDown/UserDropDown";
 import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import Link from "next/link";

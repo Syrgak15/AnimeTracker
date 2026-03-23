@@ -7,15 +7,13 @@ import Typography from '@mui/material/Typography';
 import Box from "@mui/material/Box";
 import { Container } from '@mui/material';
 import GradeIcon from '@mui/icons-material/Grade';
-import GroupsIcon from '@mui/icons-material/Groups';
 import Genre from "@/components/MainPageComponents/Genre/Genre";
-import {FavoriteAnimeList} from "@/types/FavoriteAnimeList";
-import AddToFavorites from "@/components/MainPageComponents/AddToFavorites/AddToFavorites";
 import DeleteFromFavorites from "@/components/ProfileComponents/DeleteFromFavorites/DeleteFromFavorites";
+import {FavoriteAnimeList} from "@/types/FavoriteAnimeList";
 
 interface AnimeListProps {
-    favorite: AnimeListType;
-    setAnimeList: React.Dispatch<React.SetStateAction<any[]>>;
+    favorite: FavoriteAnimeList;
+    setAnimeList: React.Dispatch<React.SetStateAction<FavoriteAnimeList[]>>;
 }
 
 export default function ImgMediaCard({favorite, setAnimeList}: AnimeListProps) {

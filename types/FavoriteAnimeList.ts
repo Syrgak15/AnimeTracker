@@ -1,11 +1,26 @@
 export interface FavoriteAnimeList {
-    aired: number,
-    episodes: number,
-    id: string,
-    images: string,
-    score: number,
-    source: string,
-    status: string,
-    title: string,
-    type: string,
+    anime: {
+        mal_id: number;
+        title: string;
+        images: {
+            jpg: {
+                large_image_url: string;
+            };
+        };
+        score: number;
+        episodes: number;
+        genres: {
+            name: string;
+        }[];
+        aired: {
+            prop: {
+                from: {
+                    year: number;
+                };
+            };
+        };
+    };
+   animeId: number;
+   email: string,
+   id: string
 }

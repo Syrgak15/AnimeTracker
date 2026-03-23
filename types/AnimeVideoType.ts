@@ -4,5 +4,5 @@ export default interface AnimeVideoType {
         trailer: {
             embed_url: string,
         }
-    }
+    }[]
 }

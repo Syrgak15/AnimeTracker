@@ -4,7 +4,6 @@ import Header from "@/components/HeaderComponents/Header/Header";
 import Container from '@mui/material/Container';
 import Footer from "@/components/MainPageComponents/Footer/Footer";
 import { Play } from 'next/font/google'
-import Banner from "@/components/MainPageComponents/Banner/Banner";
 import { SessionProvider } from 'next-auth/react';
 
 
@@ -27,7 +26,6 @@ export default function RootLayout({
           <html lang="en" className={play.className} suppressHydrationWarning={true}>
           <body>
           <Header/>
-          {/*<Banner/>*/}
           <Container suppressHydrationWarning maxWidth="xl">
               {children}
           </Container>

@@ -11,13 +11,14 @@ import {deleteFromFavorites} from "@/services/deleteFromFavorites";
 import {getFavorites} from "@/services/getFavorites";
 import * as React from "react";
 import Modal from "@/components/MUI-components/Modal/Modal";
+import {FavoriteAnimeList} from "@/types/FavoriteAnimeList";
 
 interface AnimeListProps {
     anime: AnimeListType;
 }
 
 export default function AddToFavorites({anime}: AnimeListProps) {
-    const [favorite, setFavorite] = useState<AnimeListType[]>([])
+    const [favorite, setFavorite] = useState<FavoriteAnimeList[]>([])
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
@@ -40,7 +41,6 @@ export default function AddToFavorites({anime}: AnimeListProps) {
 
     const toggleFavorite = async (e: React.MouseEvent) => {
         e.preventDefault();
-        e.stopPropagation();
 
         if (!userEmail) {
             handleOpen();
@@ -51,8 +51,8 @@ export default function AddToFavorites({anime}: AnimeListProps) {
             await deleteFromFavorites(anime.mal_id, userEmail);
             setFavorite(prev => prev.filter(item => item.animeId !== anime.mal_id));
         } else {
-            await addToFavorites(anime, userEmail, anime.mal_id);
-            setFavorite(prev => [...prev, { ...anime, email: userEmail, animeId: anime.mal_id }]);
+            const newFavorite = await addToFavorites(anime, userEmail, anime.mal_id);
+            setFavorite(prev => [...prev, newFavorite]);
         }
     };
 

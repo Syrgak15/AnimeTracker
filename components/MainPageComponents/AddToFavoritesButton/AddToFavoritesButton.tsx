@@ -11,13 +11,14 @@ import {deleteFromFavorites} from "@/services/deleteFromFavorites";
 import {getFavorites} from "@/services/getFavorites";
 import "./style.css";
 import * as React from "react";
+import {FavoriteAnimeList} from "@/types/FavoriteAnimeList";
 
-interface Props {
+interface AnimeListProps {
     anime: AnimeListType;
 }
 
-export default function AddToFavButton({anime}: Props) {
-    const [favorites, setFavorites] = useState<AnimeListType[]>([]);
+export default function AddToFavButton({anime}: AnimeListProps) {
+    const [favorites, setFavorites] = useState<FavoriteAnimeList[]>([]);
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
@@ -52,11 +53,8 @@ export default function AddToFavButton({anime}: Props) {
                 prev.filter(item => item.animeId !== anime.mal_id)
             );
         } else {
-            await addToFavorites(anime, userEmail, anime.mal_id);
-            setFavorites(prev => [
-                ...prev,
-                {...anime, email: userEmail, animeId: anime.mal_id}
-            ]);
+            const newFavorite = await addToFavorites(anime, userEmail, anime.mal_id);
+            setFavorites(prev => [...prev, newFavorite]);
         }
     };
 

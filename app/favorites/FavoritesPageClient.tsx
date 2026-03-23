@@ -3,21 +3,21 @@
 import "./style.css"
 import Skeleton from "@/components/MUI-components/Skeleton/Skeleton";
 import {useSession} from 'next-auth/react';
-import {AnimeListType} from "@/types/AnimeListType";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import CardFavorites from "@/components/MUI-components/CardFavorites/CardFavorites";
 import Link from "next/link";
-import {useEffect, useState} from "react";
+import {useState} from "react";
 import EmptyState from "@/components/ProfileComponents/EmptyState/EmptyState";
+import {FavoriteAnimeList} from "@/types/FavoriteAnimeList";
 
 interface AnimeProp {
-    animes: AnimeListType[];
+    animes: FavoriteAnimeList[];
 }
 
 export default function Favorites({animes}: AnimeProp) {
     const {data: session, status} = useSession();
-    const [animeList, setAnimeList] = useState<AnimeListType[]>(animes);
+    const [animeList, setAnimeList] = useState<FavoriteAnimeList[]>(animes);
 
 
     if (status === "loading") {
@@ -51,8 +51,8 @@ export default function Favorites({animes}: AnimeProp) {
                                         spacing={{ xs: 3, sm: 3, md: 3, lg: 3 }}
                                         columns={{ xs: 1, sm: 6, md: 12, lg: 15 }}
                                     >
-                                        {animeList?.map((anime, index) => (
-                                            <Grid key={anime.animeId} size={{ xs: 12, sm: 3, md: 4, lg: 3 }}>
+                                        {animeList?.map((anime) => (
+                                            <Grid key={anime.anime.mal_id} size={{ xs: 12, sm: 3, md: 4, lg: 3 }}>
                                                 <Link
                                                     style={{textDecoration: 'none'}}
                                                     href={`/anime/${anime.animeId}`}

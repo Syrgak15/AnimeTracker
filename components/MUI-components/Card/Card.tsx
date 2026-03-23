@@ -7,7 +7,6 @@ import Typography from '@mui/material/Typography';
 import Box from "@mui/material/Box";
 import { Container } from '@mui/material';
 import GradeIcon from '@mui/icons-material/Grade';
-import GroupsIcon from '@mui/icons-material/Groups';
 import Genre from "@/components/MainPageComponents/Genre/Genre";
 import AddToFavorites from "@/components/MainPageComponents/AddToFavorites/AddToFavorites";
 
@@ -40,6 +39,7 @@ export default function ImgMediaCard({anime}: AnimeListProps) {
             />
 
             <Typography
+                onClick={(e) => e.stopPropagation()}
                 sx={{
                     position: 'absolute',
                     top: '9px',
