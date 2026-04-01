@@ -5,12 +5,14 @@ import Grid from '@mui/material/Grid';
 import Card from "../Card/Card";
 import {AnimeListType} from "@/types/AnimeListType";
 import Link from 'next/link';
+import {FavoriteAnimeList} from "@/types/FavoriteAnimeList";
 
 interface AnimeListProps {
     animeLists: AnimeListType[];
+    favorites: FavoriteAnimeList[];
 }
 
-export default function ResponsiveGrid({animeLists}: AnimeListProps) {
+export default function ResponsiveGrid({animeLists, favorites}: AnimeListProps) {
 
     return (
         <Box sx={{ flexGrow: 1 }}>
@@ -25,7 +27,10 @@ export default function ResponsiveGrid({animeLists}: AnimeListProps) {
                                 style={{ textDecoration: 'none' }}
                                 href={`/anime/${anime.mal_id}`}
                             >
-                                <Card anime={anime}/>
+                                <Card
+                                    favorites={favorites}
+                                    anime={anime}
+                                />
                             </Link>
                         </Grid>
                 ))}

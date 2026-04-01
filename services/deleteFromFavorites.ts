@@ -1,13 +1,21 @@
-export const deleteFromFavorites = async (animeId: number, userEmail: string) => {
+export const deleteFromFavorites = async (
+    animeId: number,
+    email: string
+) => {
     try {
-        const res = await fetch(`http://localhost:3001/favorites?animeId=${animeId}&email=${userEmail}`);
-        const data = await res.json();
+        const res = await fetch("/api/favorites", {
+            method: "DELETE",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ animeId, email }),
+        });
 
-        if (data.length === 0) return;
+        if (!res.ok) {
+            throw new Error("Failed to delete favorite");
+        }
 
-        const favoriteId = data[0].id;
-        await fetch(`http://localhost:3001/favorites/${favoriteId}`, { method: "DELETE" });
-    } catch(e:unknown) {
-        console.log(e);
+        return await res.json();
+    } catch (error) {
+        console.error("Delete error:", error);
+        throw error;
     }
-}
+};

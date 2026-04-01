@@ -1915,6 +1915,355 @@
       },
       "email": "delcatessen@gmail.com",
       "animeId": 56009
+    },
+    {
+      "id": "0291",
+      "anime": {
+        "mal_id": 55825,
+        "url": "https://myanimelist.net/anime/55825/Jigokuraku_2nd_Season",
+        "images": {
+          "jpg": {
+            "image_url": "https://myanimelist.net/images/anime/1772/154456.jpg",
+            "small_image_url": "https://myanimelist.net/images/anime/1772/154456t.jpg",
+            "large_image_url": "https://myanimelist.net/images/anime/1772/154456l.jpg"
+          },
+          "webp": {
+            "image_url": "https://myanimelist.net/images/anime/1772/154456.webp",
+            "small_image_url": "https://myanimelist.net/images/anime/1772/154456t.webp",
+            "large_image_url": "https://myanimelist.net/images/anime/1772/154456l.webp"
+          }
+        },
+        "trailer": {
+          "youtube_id": null,
+          "url": null,
+          "embed_url": "https://www.youtube-nocookie.com/embed/kBnmkMngfak?enablejsapi=1&wmode=opaque&autoplay=1",
+          "images": {
+            "image_url": null,
+            "small_image_url": null,
+            "medium_image_url": null,
+            "large_image_url": null,
+            "maximum_image_url": null
+          }
+        },
+        "approved": true,
+        "titles": [
+          {
+            "type": "Default",
+            "title": "Jigokuraku 2nd Season"
+          },
+          {
+            "type": "Synonym",
+            "title": "Paradition"
+          },
+          {
+            "type": "Synonym",
+            "title": "Heavenhell"
+          },
+          {
+            "type": "Japanese",
+            "title": "地獄楽第二期"
+          },
+          {
+            "type": "English",
+            "title": "Hell's Paradise Season 2"
+          }
+        ],
+        "title": "Jigokuraku 2nd Season",
+        "title_english": "Hell's Paradise Season 2",
+        "title_japanese": "地獄楽第二期",
+        "title_synonyms": [
+          "Paradition",
+          "Heavenhell"
+        ],
+        "type": "TV",
+        "source": "Manga",
+        "episodes": 12,
+        "status": "Currently Airing",
+        "airing": true,
+        "aired": {
+          "from": "2026-01-11T00:00:00+00:00",
+          "to": "2026-03-29T00:00:00+00:00",
+          "prop": {
+            "from": {
+              "day": 11,
+              "month": 1,
+              "year": 2026
+            },
+            "to": {
+              "day": 29,
+              "month": 3,
+              "year": 2026
+            }
+          },
+          "string": "Jan 11, 2026 to Mar 29, 2026"
+        },
+        "duration": "24 min per ep",
+        "rating": "R - 17+ (violence & profanity)",
+        "score": 8.24,
+        "scored_by": 35833,
+        "rank": 375,
+        "popularity": 871,
+        "members": 321628,
+        "favorites": 2660,
+        "synopsis": "Seeking the key to the elixir of immortality, the group arrives at the fortress of the island's monstrous ruler, the \"Tensen.\" To survive and escape the island, cooperation becomes essential—regardless of whether one is a condemned criminal or an executioner.\n\nMeanwhile, the shogunate orders additional landings on the island of the Immortal Realm, led by Shugen Yamada Asayemon. Among them are the Ishigakure clan, who share a past with Gabimaru.\n\nDesperate to find the elixir and escape the island, Gabimaru and his companions face the Tensen in a battle that escalates into an all-out confrontation between humans and immortals!\n\n(Source: Twin Engine, edited)",
+        "background": "",
+        "season": "winter",
+        "year": 2026,
+        "broadcast": {
+          "day": "Sundays",
+          "time": "23:45",
+          "timezone": "Asia/Tokyo",
+          "string": "Sundays at 23:45 (JST)"
+        },
+        "producers": [
+          {
+            "mal_id": 769,
+            "type": "anime",
+            "name": "Fujipacific Music",
+            "url": "https://myanimelist.net/anime/producer/769/Fujipacific_Music"
+          },
+          {
+            "mal_id": 1747,
+            "type": "anime",
+            "name": "Twin Engine",
+            "url": "https://myanimelist.net/anime/producer/1747/Twin_Engine"
+          },
+          {
+            "mal_id": 1856,
+            "type": "anime",
+            "name": "dugout",
+            "url": "https://myanimelist.net/anime/producer/1856/dugout"
+          }
+        ],
+        "licensors": [],
+        "studios": [
+          {
+            "mal_id": 569,
+            "type": "anime",
+            "name": "MAPPA",
+            "url": "https://myanimelist.net/anime/producer/569/MAPPA"
+          }
+        ],
+        "genres": [
+          {
+            "mal_id": 1,
+            "type": "anime",
+            "name": "Action",
+            "url": "https://myanimelist.net/anime/genre/1/Action"
+          },
+          {
+            "mal_id": 2,
+            "type": "anime",
+            "name": "Adventure",
+            "url": "https://myanimelist.net/anime/genre/2/Adventure"
+          },
+          {
+            "mal_id": 37,
+            "type": "anime",
+            "name": "Supernatural",
+            "url": "https://myanimelist.net/anime/genre/37/Supernatural"
+          }
+        ],
+        "explicit_genres": [],
+        "themes": [
+          {
+            "mal_id": 58,
+            "type": "anime",
+            "name": "Gore",
+            "url": "https://myanimelist.net/anime/genre/58/Gore"
+          },
+          {
+            "mal_id": 13,
+            "type": "anime",
+            "name": "Historical",
+            "url": "https://myanimelist.net/anime/genre/13/Historical"
+          },
+          {
+            "mal_id": 21,
+            "type": "anime",
+            "name": "Samurai",
+            "url": "https://myanimelist.net/anime/genre/21/Samurai"
+          }
+        ],
+        "demographics": [
+          {
+            "mal_id": 27,
+            "type": "anime",
+            "name": "Shounen",
+            "url": "https://myanimelist.net/anime/genre/27/Shounen"
+          }
+        ]
+      },
+      "email": "delcatessen@gmail.com",
+      "animeId": 55825
+    },
+    {
+      "id": "3ac7",
+      "anime": {
+        "mal_id": 58788,
+        "url": "https://myanimelist.net/anime/58788/Ikoku_Nikki",
+        "images": {
+          "jpg": {
+            "image_url": "https://myanimelist.net/images/anime/1791/154233.jpg",
+            "small_image_url": "https://myanimelist.net/images/anime/1791/154233t.jpg",
+            "large_image_url": "https://myanimelist.net/images/anime/1791/154233l.jpg"
+          },
+          "webp": {
+            "image_url": "https://myanimelist.net/images/anime/1791/154233.webp",
+            "small_image_url": "https://myanimelist.net/images/anime/1791/154233t.webp",
+            "large_image_url": "https://myanimelist.net/images/anime/1791/154233l.webp"
+          }
+        },
+        "trailer": {
+          "youtube_id": null,
+          "url": null,
+          "embed_url": "https://www.youtube-nocookie.com/embed/DX6mmkoByyc?enablejsapi=1&wmode=opaque&autoplay=1",
+          "images": {
+            "image_url": null,
+            "small_image_url": null,
+            "medium_image_url": null,
+            "large_image_url": null,
+            "maximum_image_url": null
+          }
+        },
+        "approved": true,
+        "titles": [
+          {
+            "type": "Default",
+            "title": "Ikoku Nikki"
+          },
+          {
+            "type": "Synonym",
+            "title": "Different Country Diary"
+          },
+          {
+            "type": "Synonym",
+            "title": "Foreign Country Diary"
+          },
+          {
+            "type": "Japanese",
+            "title": "違国日記"
+          },
+          {
+            "type": "English",
+            "title": "Journal with Witch"
+          }
+        ],
+        "title": "Ikoku Nikki",
+        "title_english": "Journal with Witch",
+        "title_japanese": "違国日記",
+        "title_synonyms": [
+          "Different Country Diary",
+          "Foreign Country Diary"
+        ],
+        "type": "TV",
+        "source": "Manga",
+        "episodes": 13,
+        "status": "Currently Airing",
+        "airing": true,
+        "aired": {
+          "from": "2026-01-04T00:00:00+00:00",
+          "to": "2026-03-29T00:00:00+00:00",
+          "prop": {
+            "from": {
+              "day": 4,
+              "month": 1,
+              "year": 2026
+            },
+            "to": {
+              "day": 29,
+              "month": 3,
+              "year": 2026
+            }
+          },
+          "string": "Jan 4, 2026 to Mar 29, 2026"
+        },
+        "duration": "23 min per ep",
+        "rating": "PG-13 - Teens 13 or older",
+        "score": 8.71,
+        "scored_by": 12350,
+        "rank": 61,
+        "popularity": 2705,
+        "members": 81196,
+        "favorites": 808,
+        "synopsis": "Thirty-five-year-old novelist Makio Koudai never had a good relationship with her older sister Minori, who always berated her for being different. Due to this, Makio is not stricken with grief upon hearing the news that Minori and her husband died in a car crash. But when Makio is asked to identify their bodies, she runs into her 15-year-old niece, Asa Takumi, whom she has not seen in years.\n\nAs Asa struggles to process her parents' death, Makio reassures her that her complicated feelings are valid and suggests that the teenager start writing in a diary as a way to cope with the loss. Upon learning that no other relatives wanted to take in Asa, Makio decides to become her guardian despite her lack of experience. In a world full of uncertainty, the novelist and teenager must learn to live with each other while figuring themselves out.\n\n[Written by MAL Rewrite]",
+        "background": "",
+        "season": "winter",
+        "year": 2026,
+        "broadcast": {
+          "day": "Sundays",
+          "time": "23:00",
+          "timezone": "Asia/Tokyo",
+          "string": "Sundays at 23:00 (JST)"
+        },
+        "producers": [
+          {
+            "mal_id": 144,
+            "type": "anime",
+            "name": "Pony Canyon",
+            "url": "https://myanimelist.net/anime/producer/144/Pony_Canyon"
+          },
+          {
+            "mal_id": 166,
+            "type": "anime",
+            "name": "Movic",
+            "url": "https://myanimelist.net/anime/producer/166/Movic"
+          },
+          {
+            "mal_id": 1041,
+            "type": "anime",
+            "name": "Ai Addiction",
+            "url": "https://myanimelist.net/anime/producer/1041/Ai_Addiction"
+          },
+          {
+            "mal_id": 1211,
+            "type": "anime",
+            "name": "Tokyo MX",
+            "url": "https://myanimelist.net/anime/producer/1211/Tokyo_MX"
+          },
+          {
+            "mal_id": 1500,
+            "type": "anime",
+            "name": "ABC Animation",
+            "url": "https://myanimelist.net/anime/producer/1500/ABC_Animation"
+          },
+          {
+            "mal_id": 2185,
+            "type": "anime",
+            "name": "BS Asahi",
+            "url": "https://myanimelist.net/anime/producer/2185/BS_Asahi"
+          }
+        ],
+        "licensors": [],
+        "studios": [
+          {
+            "mal_id": 1119,
+            "type": "anime",
+            "name": "Shuka",
+            "url": "https://myanimelist.net/anime/producer/1119/Shuka"
+          }
+        ],
+        "genres": [
+          {
+            "mal_id": 8,
+            "type": "anime",
+            "name": "Drama",
+            "url": "https://myanimelist.net/anime/genre/8/Drama"
+          }
+        ],
+        "explicit_genres": [],
+        "themes": [],
+        "demographics": [
+          {
+            "mal_id": 43,
+            "type": "anime",
+            "name": "Josei",
+            "url": "https://myanimelist.net/anime/genre/43/Josei"
+          }
+        ]
+      },
+      "email": "delcatessen@gmail.com",
+      "animeId": 58788
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

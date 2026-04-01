@@ -1,6 +1,6 @@
 "use client"
 
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import Paper from '@mui/material/Paper';
 import InputBase from '@mui/material/InputBase';
 import {AnimeListType} from "@/types/AnimeListType";
@@ -8,19 +8,22 @@ import WhatshotIcon from "@mui/icons-material/Whatshot";
 import Grid from "@/components/MUI-components/Grid/Grid";
 import Box from '@mui/material/Box';
 import Tabs from "@/components/MainPageComponents/Tabs/Tabs";
+import {FavoriteAnimeList} from "@/types/FavoriteAnimeList";
+
 
 interface AnimeListProps {
     animeLists: AnimeListType[];
     limitedAnimeLists: AnimeListType[];
+    favorites: FavoriteAnimeList[];
 }
 
-
-export default function CustomizedInputBase({ animeLists, limitedAnimeLists }: AnimeListProps) {
+export default function CustomizedInputBase({ animeLists, limitedAnimeLists, favorites }: AnimeListProps) {
 
     const [currentValue, setCurrentValue] = useState("");
     const [filteredLimitedAnimeList, setFilteredLimitedAnimeList] = useState<AnimeListType[]>(limitedAnimeLists);
     const [filteredAnimeList, setFilteredAnimeList] = useState<AnimeListType[]>(animeLists);
     const [activeTab, setActiveTab] = useState<number>(0);
+
 
     const handleChange = (e: any) => {
         const value = e.target.value;
@@ -57,6 +60,7 @@ export default function CustomizedInputBase({ animeLists, limitedAnimeLists }: A
             data: filteredLimitedAnimeList,
         }
     ];
+
 
     return <>
         <div className="anime-list">
@@ -106,6 +110,7 @@ export default function CustomizedInputBase({ animeLists, limitedAnimeLists }: A
                 <div className="anime-grid">
                     {tabsConfig[activeTab].data.length !== 0 ? (
                         <Grid
+                            favorites={favorites}
                             animeLists={
                                 tabsConfig[activeTab].data
                             }

@@ -48,7 +48,6 @@ export default function BasicModal({open, handleClose}: ModalProps) {
                         component="h2">
                         Please sign in to add anime to your favorites.
                     </Typography>
-
                 </Box>
             </Modal>
         </div>

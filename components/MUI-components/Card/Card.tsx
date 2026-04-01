@@ -9,12 +9,15 @@ import { Container } from '@mui/material';
 import GradeIcon from '@mui/icons-material/Grade';
 import Genre from "@/components/MainPageComponents/Genre/Genre";
 import AddToFavorites from "@/components/MainPageComponents/AddToFavorites/AddToFavorites";
+import {FavoriteAnimeList} from "@/types/FavoriteAnimeList";
 
 interface AnimeListProps {
     anime: AnimeListType;
+    favorites: FavoriteAnimeList[];
 }
 
-export default function ImgMediaCard({anime}: AnimeListProps) {
+export default function ImgMediaCard({anime, favorites}: AnimeListProps) {
+    const isInFav = favorites.some(item => item.animeId === anime.mal_id);
 
     return (
         <Card sx={{
@@ -47,7 +50,11 @@ export default function ImgMediaCard({anime}: AnimeListProps) {
                     color: 'rgb(161 247 5 / 96%)'
                 }}
             >
-                <AddToFavorites anime={anime}/>
+                <AddToFavorites
+                    isInFav={isInFav}
+                    favorites={favorites}
+                    anime={anime}
+                />
             </Typography>
 
             <Typography

@@ -1,17 +1,17 @@
 import {AnimeListType} from "@/types/AnimeListType";
 
-export const addToFavorites = async (anime : AnimeListType, email: string, animeId: number) => {
-    const res = await fetch(`http://localhost:3001/favorites`, {
+export const addToFavorites = async (anime: AnimeListType, email: string, animeId: number) => {
+    const res = await fetch("/api/favorites", {
         method: "POST",
-        headers: {
-            "Content-type": "application/json"
-        },
-        body: JSON.stringify({
-            anime,
-            email,
-            animeId
-        })
-    })
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ anime, email, animeId }),
+    });
 
-    return res.json();
-}
+    const data = await res.json();
+
+    if (!res.ok || data.message === "Already in favorites") {
+        throw new Error("Failed to add favorite or already exists");
+    }
+
+    return data;
+};

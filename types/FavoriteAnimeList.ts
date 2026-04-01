@@ -22,5 +22,5 @@ export interface FavoriteAnimeList {
     };
    animeId: number;
    email: string,
-   id: string
+   id: string,
 }
