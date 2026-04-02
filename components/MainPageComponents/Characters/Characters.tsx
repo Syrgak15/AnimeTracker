@@ -1,3 +1,4 @@
+
 import './style.css'
 import CharactersType from "@/types/CharactersType";
 import GridCharacters from "@/components/MUI-components/GridCharacters/GridCharacters";
@@ -8,6 +9,9 @@ export interface CharactersProps {
 }
 
 export default function Characters({characters}: CharactersProps) {
+
+    if(!characters || characters.length === 0) return;
+
     return (
         <>
             <div className="characters">

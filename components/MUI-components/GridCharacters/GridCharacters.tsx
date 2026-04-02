@@ -10,10 +10,17 @@ import Card from "@mui/material/Card";
 import * as React from "react";
 import ModalCharacters from "@/components/MUI-components/ModalCharacters/ModalCharacters";
 import CharactersType from "@/types/CharactersType";
+import PaginationCharacters from "@/components/MUI-components/PaginationCharacters/PaginationCharacters";
+import {useState} from "react";
 
 export default function GridCharacters({characters}: CharactersProps) {
     const [open, setOpen] = React.useState(false);
     const [selectedCharacter, setSelectedCharacter] = React.useState<CharactersType | null>(null);
+    const [currentPage, setCurrentPage] = useState(1);
+    const [charactersPerPage, setCharactersPerPage] = useState(10);
+    const amountOfPages = Math.ceil(characters.length / charactersPerPage);
+    const startIndex = (currentPage - 1) * charactersPerPage;
+    const endIndex = startIndex + charactersPerPage;
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
 
@@ -24,14 +31,17 @@ export default function GridCharacters({characters}: CharactersProps) {
 
     return (
         <>
-            <Box sx={{ flexGrow: 1, marginTop: 4 }}>
-                <Grid container spacing={2}>
-                    {characters?.map((ch) => (
-                        <Grid item key={ch.character.mal_id} xs={12} sm={6} md={4} lg={3}>
+            <Box sx={{marginTop: 4}}>
+                <Grid
+                    container
+                    spacing={{xs: 2, sm: 2, md: 2, lg: 3}}
+                    columns={{xs: 1, sm: 8, md: 12, lg: 15}}
+                >
+                    {characters?.slice(startIndex, endIndex).map((ch) => (
+                        <Grid item key={ch.character.mal_id} size={{xs: 1, sm: 4, md: 4, lg: 3}}>
                             <Card
                                 onClick={() => handleClick(ch)}
                                 sx={{
-                                    width: 260,
                                     borderRadius: 2,
                                     transition: "transform 0.3s ease, box-shadow 0.3s ease",
                                     ":hover": {
@@ -69,6 +79,15 @@ export default function GridCharacters({characters}: CharactersProps) {
                     ))}
                 </Grid>
             </Box>
+            {characters.length > 11 && (
+                <div className="characters-list__pagination">
+                    <PaginationCharacters
+                        amountOfPages={amountOfPages}
+                        currentPage={currentPage}
+                        onChange={(event, page) => setCurrentPage(page)}
+                    />
+                </div>
+            )}
             <ModalCharacters open={open} handleClose={handleClose} character={selectedCharacter}/>
         </>
     );
