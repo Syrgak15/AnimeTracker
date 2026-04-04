@@ -1,6 +1,6 @@
 "use client"
 
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import Paper from '@mui/material/Paper';
 import InputBase from '@mui/material/InputBase';
 import {AnimeListType} from "@/types/AnimeListType";
@@ -8,16 +8,14 @@ import WhatshotIcon from "@mui/icons-material/Whatshot";
 import Grid from "@/components/MUI-components/Grid/Grid";
 import Box from '@mui/material/Box';
 import Tabs from "@/components/MainPageComponents/Tabs/Tabs";
-import {FavoriteAnimeList} from "@/types/FavoriteAnimeList";
 
 
 interface AnimeListProps {
     animeLists: AnimeListType[];
     limitedAnimeLists: AnimeListType[];
-    favorites: FavoriteAnimeList[];
 }
 
-export default function CustomizedInputBase({ animeLists, limitedAnimeLists, favorites }: AnimeListProps) {
+export default function CustomizedInputBase({ animeLists, limitedAnimeLists }: AnimeListProps) {
 
     const [currentValue, setCurrentValue] = useState("");
     const [filteredLimitedAnimeList, setFilteredLimitedAnimeList] = useState<AnimeListType[]>(limitedAnimeLists);
@@ -110,7 +108,6 @@ export default function CustomizedInputBase({ animeLists, limitedAnimeLists, fav
                 <div className="anime-grid">
                     {tabsConfig[activeTab].data.length !== 0 ? (
                         <Grid
-                            favorites={favorites}
                             animeLists={
                                 tabsConfig[activeTab].data
                             }

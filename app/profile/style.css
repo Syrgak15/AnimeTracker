@@ -48,7 +48,7 @@
     background: var(--bg-color);
     border-radius: 8px;
     max-width: 1000px;
-    color: var(--text-color);
+    color: #fff;
     font-weight: bold;
 }
 .profile__info-name p, .profile__info-email p {

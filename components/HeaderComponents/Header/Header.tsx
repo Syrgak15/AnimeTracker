@@ -10,16 +10,17 @@ export default function Header() {
     return (
         <div className={`header scroll-${scrollDirection}`}>
             <div className="header-links">
-                <div className="header-logo">
+                <Link className="header-link" href="/producers">
+                    Producers
+                </Link>
+            </div>
 
-                </div>
-                <Link
-                    className="header-link"
-                    href="/"
-                >
+            <div className="header-center">
+                <Link className="header-link" href="/">
                     Anira
                 </Link>
             </div>
+
             <div className="header-login">
                 <SignInButton/>
             </div>

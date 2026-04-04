@@ -1,0 +1,16 @@
+.producers-page {
+    margin-top: 50px;
+    min-height: 80vh;
+}
+.producers-content__title {
+    color: #fff;
+    font-size: 16px;
+}
+.producers-content_subtitle {
+    padding-top: 10px;
+    color: #bebbbb;
+    font-weight: 500;
+}
+.producers-content__list {
+    margin-top: 40px;
+}

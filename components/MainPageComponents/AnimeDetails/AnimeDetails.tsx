@@ -4,7 +4,6 @@ import GradeIcon from "@mui/icons-material/Grade";
 import Box from "@mui/material/Box";
 import AnimeVideoType from "@/types/AnimeVideoType";
 import Genre from "@/components/MainPageComponents/Genre/Genre";
-import AddToFavButton from "@/components/MainPageComponents/AddToFavoritesButton/AddToFavoritesButton";
 
 interface AnimeListProps {
     anime: AnimeListType;
@@ -51,7 +50,6 @@ export default function Details({anime, video}: AnimeListProps) {
                         <div className="anime-details__meta-episodes">
                             <span>{anime.episodes} Episodes</span>
                         </div>
-                        <AddToFavButton anime={anime}/>
                     </div>
 
                     <div className="anime-details__statuses">

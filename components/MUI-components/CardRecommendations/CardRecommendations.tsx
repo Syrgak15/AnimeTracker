@@ -8,7 +8,6 @@ import Box from "@mui/material/Box";
 import { Container } from '@mui/material';
 import GradeIcon from '@mui/icons-material/Grade';
 import Genre from "@/components/MainPageComponents/Genre/Genre";
-import AddToFavorites from "@/components/MainPageComponents/AddToFavorites/AddToFavorites";
 
 interface AnimeListProps {
     anime: AnimeListType;
@@ -59,7 +58,6 @@ export default function ImgMediaCard({ anime }: AnimeListProps) {
                     color: 'rgb(161 247 5 / 96%)'
                 }}
             >
-                <AddToFavorites anime={anime}/>
             </Typography>
 
             <Container>

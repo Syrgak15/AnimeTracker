@@ -1,8 +1,6 @@
 import SearchBar from "@/components/MUI-components/SearchBar/SearchBar";
 import "./style.css"
-import {getFavoriteAnimes} from "@/app/favorites/page";
 import {auth} from "@/auth";
-import {TestPost} from "@/app/api/test/route";
 
 async function getAnimeLists() {
     try {
@@ -45,11 +43,10 @@ export default async function AnimeList() {
 
     const animeLists = await getAnimeLists();
     const limitedAnimeLists = await getLimitedAnimeLists();
-    const favorites = await getFavoriteAnimes(userEmail)
 
    return (
         <>
-            <SearchBar animeLists={animeLists} limitedAnimeLists={limitedAnimeLists} favorites={favorites}/>
+            <SearchBar animeLists={animeLists} limitedAnimeLists={limitedAnimeLists}/>
         </>
     )
 }

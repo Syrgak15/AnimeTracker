@@ -21,13 +21,6 @@ export default function SignInButton() {
                             <PersonOutlineOutlinedIcon/>
                         </Link>
                     </div>
-                    <div>
-                        <Link
-                            href="/favorites"
-                        >
-                            <FavoriteBorderIcon/>
-                        </Link>
-                    </div>
                 </div>
             </>
         );

@@ -38,7 +38,7 @@ export default function GridCharacters({characters}: CharactersProps) {
                     columns={{xs: 1, sm: 8, md: 12, lg: 15}}
                 >
                     {characters?.slice(startIndex, endIndex).map((ch) => (
-                        <Grid item key={ch.character.mal_id} size={{xs: 1, sm: 4, md: 4, lg: 3}}>
+                        <Grid key={ch.character.mal_id} size={{xs: 1, sm: 4, md: 4, lg: 3}}>
                             <Card
                                 onClick={() => handleClick(ch)}
                                 sx={{

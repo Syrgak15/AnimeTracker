@@ -8,17 +8,12 @@ import Box from "@mui/material/Box";
 import { Container } from '@mui/material';
 import GradeIcon from '@mui/icons-material/Grade';
 import Genre from "@/components/MainPageComponents/Genre/Genre";
-import AddToFavorites from "@/components/MainPageComponents/AddToFavorites/AddToFavorites";
-import {FavoriteAnimeList} from "@/types/FavoriteAnimeList";
 
 interface AnimeListProps {
     anime: AnimeListType;
-    favorites: FavoriteAnimeList[];
 }
 
-export default function ImgMediaCard({anime, favorites}: AnimeListProps) {
-    const isInFav = favorites.some(item => item.animeId === anime.mal_id);
-
+export default function ImgMediaCard({anime}: AnimeListProps) {
     return (
         <Card sx={{
             maxWidth: "400px",
@@ -50,11 +45,6 @@ export default function ImgMediaCard({anime, favorites}: AnimeListProps) {
                     color: 'rgb(161 247 5 / 96%)'
                 }}
             >
-                <AddToFavorites
-                    isInFav={isInFav}
-                    favorites={favorites}
-                    anime={anime}
-                />
             </Typography>
 
             <Typography
