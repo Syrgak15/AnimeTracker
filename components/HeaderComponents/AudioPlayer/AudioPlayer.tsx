@@ -11,21 +11,14 @@ export default function AudioPlayer() {
 
     useEffect(() => {
         audio.current = new Audio("track.mp3");
-
-        const wasPlaying = localStorage.getItem("isPlayingLocalStorage");
-
-        if (wasPlaying === "true") {
-            audio.current.play();
-        }
+        audio.current.play();
     }, []);
 
     const togglePlayer = () => {
         if(isPlaying) {
             audio?.current?.play();
-            localStorage.setItem("isPlayingLocalStorage", "true");
         } else {
             audio?.current?.pause();
-            localStorage.setItem("isPlayingLocalStorage", "false");
         }
         setIsPlaying(prev => !prev);
     }
