@@ -4,6 +4,7 @@ import Link from 'next/link'
 import './style.css'
 import useScrollDirection from '@/hooks/useScrollDirection/useScrollDirection';
 import SignInButton from "@/components/HeaderComponents/SignInButton/SignInButton";
+import AudioPlayer from "@/components/HeaderComponents/AudioPlayer/AudioPlayer";
 
 export default function Header() {
     const scrollDirection = useScrollDirection();
@@ -22,6 +23,7 @@ export default function Header() {
             </div>
 
             <div className="header-login">
+                <AudioPlayer/>
                 <SignInButton/>
             </div>
         </div>

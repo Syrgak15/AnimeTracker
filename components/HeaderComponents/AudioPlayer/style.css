@@ -1,0 +1,7 @@
+.audio-icon {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    padding-top: 8px;
+    cursor: pointer;
+}
