@@ -7,9 +7,11 @@ import {useEffect, useRef, useState} from "react";
 
 export default function AudioPlayer() {
     const [isPlaying, setIsPlaying] = useState(false);
-    const audio = useRef(new Audio("track.mp3"))
+    const audio = useRef<HTMLAudioElement | null>(null)
 
     useEffect(() => {
+        audio.current = new Audio("track.mp3");
+
         const wasPlaying = localStorage.getItem("isPlayingLocalStorage");
 
         if (wasPlaying === "true") {
