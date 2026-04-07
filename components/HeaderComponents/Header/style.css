@@ -39,3 +39,19 @@
     font-size: 30px;
     font-weight: bold;
 }
+
+.header-links-desktop {
+    display: none;
+}
+.header-links-mobile {
+    display: block;
+}
+
+@media (min-width: 769px) {
+    .header-links-desktop {
+        display: block;
+    }
+    .header-links-mobile {
+        display: none;
+    }
+}
