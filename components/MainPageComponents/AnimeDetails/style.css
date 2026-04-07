@@ -75,25 +75,9 @@
     font-size: clamp(14px, 1.2vw, 16px);
     line-height: 1.6;
 }
-
-.anime-details__trailer {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    padding-top: 59%;
-    margin: 40px 100px 0;
-}
-
 .anime-details__trailer-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 80%;
-    height: 79.50%;
-    padding: 30px;
-    margin-left: 45px;
+    width: 100%;
+    aspect-ratio: 16/9;
     border-radius: 30px;
     background: #171717CC;
 }
@@ -127,21 +111,12 @@
     .anime-details__meta, .anime-details__meta-score, .anime-details__meta-year, .anime-details__meta-episodes {
         font-size: clamp(12px, 2.5vw, 14px);
     }
-    .anime-details__trailer {
-        margin: 40px 20px 0;
-    }
     .anime-details__image {
         width: 260px;
         height: 370px;
     }
     .anime-details__image-wrapper {
         width: 100%;
-    }
-}
-
-@media (max-width: 425px) {
-    .anime-details__trailer {
-        margin: 40px -5px 0;
     }
 }
 

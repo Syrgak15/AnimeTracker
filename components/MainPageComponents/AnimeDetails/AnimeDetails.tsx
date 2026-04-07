@@ -71,7 +71,6 @@ export default function Details({anime, video}: AnimeListProps) {
                 </div>
             </div>
             <div className="anime-details__trailer">
-                <div className="anime-details__trailer-wrapper">
                     {videoUrl ? (
                         <iframe
                             src={videoUrl}
@@ -92,8 +91,6 @@ export default function Details({anime, video}: AnimeListProps) {
                             className="anime-details__trailer-video not-available"
                         ></iframe>
                     )}
-
-                </div>
             </div>
         </div>
     )
