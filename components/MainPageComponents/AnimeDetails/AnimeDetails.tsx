@@ -42,13 +42,13 @@ export default function Details({anime, video}: AnimeListProps) {
                             <Box>
                                 <GradeIcon fontSize="small"/>
                             </Box>
-                            <span>{anime.score}</span>
+                            <span>{anime.score ? anime.score : 0.00}</span>
                         </div>
                         <div className="anime-details__meta-year">
-                            <span>{anime.aired.prop.from.year} Year</span>
+                            <span>{anime.aired.prop.from.year ? anime.aired.prop.from.year : "2026" } Year</span>
                         </div>
                         <div className="anime-details__meta-episodes">
-                            <span>{anime.episodes} Episodes</span>
+                            <span>{anime.episodes ? anime.episodes : 1} Episodes</span>
                         </div>
                     </div>
 
@@ -71,26 +71,42 @@ export default function Details({anime, video}: AnimeListProps) {
                 </div>
             </div>
             <div className="anime-details__trailer">
-                    {videoUrl ? (
-                        <iframe
+                {videoUrl ? (
+                    <iframe
                             src={videoUrl}
                             title={videoTitle}
                             allowFullScreen
                             className="anime-details__trailer-video"
-                        ></iframe>
-                    ) : (
-                        <iframe
-                            srcDoc={`
-                            <div style="text-align: center; padding: 20px">
-                                <span style="font-size: 30px; font-weight: bold; color: #f9f5f5e3">No trailer available.</span>
-                                <p style="font-size: 15px; font-weight: bold; color: grey">No anime data available. Check back later.</p>
-                            </div> 
-                            `}
-                            title={videoTitle}
-                            allowFullScreen
-                            className="anime-details__trailer-video not-available"
-                        ></iframe>
-                    )}
+                    ></iframe>
+                ) : (
+                    <iframe
+                        srcDoc={`
+                                <div style="
+                                  display: flex;
+                                  justify-content: center;
+                                  align-items: center;
+                                  height: 90vh;
+                                  overflow: hidden;
+                                  text-align: center;
+                                  padding: 20px;
+                                  box-sizing: border-box;
+                                ">
+                                  <div>
+                                    <span style="font-size: 30px; font-weight: bold; color: #f9f5f5e3">
+                                      No trailer available.
+                                    </span>
+                                    <p style="font-size: 15px; font-weight: bold; color: grey">
+                                      No anime data available. Check back later.
+                                    </p>
+                                  </div>
+                                </div>
+                              `}
+                        title={videoTitle}
+                        allowFullScreen
+                        className="anime-details__trailer-video not-available"
+                    />
+
+                )}
             </div>
         </div>
     )

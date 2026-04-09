@@ -49,7 +49,8 @@
 
 @media (min-width: 769px) {
     .header-links-desktop {
-        display: block;
+        display: flex;
+        gap: 25px;
     }
     .header-links-mobile {
         display: none;

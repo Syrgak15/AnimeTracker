@@ -1,0 +1,10 @@
+.faq {
+    height: 80vh;
+}
+.faq-content, .faq-accordion {
+    margin-top: 50px;
+}
+.faq-title {
+    color: #fff;
+    font-size: 16px;
+}

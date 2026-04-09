@@ -8,12 +8,10 @@
 
 .anime-details__image {
     width: 350px;
-    height: 500px;
 }
 
 .anime-details__image-wrapper {
     width: 350px;
-    height: auto;
 }
 
 .anime-details__image-wrapper img{
@@ -75,6 +73,9 @@
     font-size: clamp(14px, 1.2vw, 16px);
     line-height: 1.6;
 }
+.anime-details__trailer {
+    margin-bottom: 50px;
+}
 .anime-details__trailer-video {
     width: 100%;
     aspect-ratio: 16/9;
@@ -82,9 +83,6 @@
     background: #171717CC;
 }
 
-.not-available {
-    height: auto !important;
-}
 
 /*Media Queries*/
 
@@ -113,7 +111,6 @@
     }
     .anime-details__image {
         width: 260px;
-        height: 370px;
     }
     .anime-details__image-wrapper {
         width: 100%;

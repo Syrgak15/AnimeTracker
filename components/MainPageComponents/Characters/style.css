@@ -1,5 +1,4 @@
 .characters {
-    margin-left: 30px;
     margin-bottom: 100px;
     margin-top: 70px;
 }
@@ -8,7 +7,15 @@
     font-size: 30px;
     font-weight: bold;
     color: #FFF;
+    margin-bottom: 15px;
 }
+.characters-subtitle {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--bg-color);
+    margin-bottom: 15px;
+}
+
 .characters-list__pagination {
     margin-top: 50px;
     display: flex;

@@ -47,7 +47,7 @@ export default function ImgMediaCard({ anime }: AnimeListProps) {
                     fontSize: "13px"
                 }}
             >
-                Ep {anime.episodes}
+                Ep {anime.episodes ? anime.episodes : 1}
             </Typography>
 
             <Typography
@@ -88,7 +88,7 @@ export default function ImgMediaCard({ anime }: AnimeListProps) {
                                     sx={{fontSize: '17px'}}
                                     fontSize="small"/>
                             </Box>
-                            {anime.score}
+                            {anime.score ? anime.score : 0}
                         </Typography>
 
                         <Typography

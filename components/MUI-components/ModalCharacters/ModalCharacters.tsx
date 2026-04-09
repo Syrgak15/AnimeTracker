@@ -59,6 +59,9 @@ export default function ModalCharacters({open, handleClose, character}: ModalPro
                                 transition: "color 0.1s ease",
                                 '&:hover': {
                                     color: "#fff"
+                                },
+                                "@media (max-width: 599px)": {
+                                    color: "#dcdcdc"
                                 }
                             }}
                         >
@@ -92,6 +95,7 @@ export default function ModalCharacters({open, handleClose, character}: ModalPro
                                 color: "var(--bg-color)",
                                 fontWeight: "bold",
                                 fontFamily: "var(--ffamily)",
+
                             }}>
                             {character.character.name}
                         </Typography>
@@ -153,7 +157,7 @@ export default function ModalCharacters({open, handleClose, character}: ModalPro
                             Voice Actors:
                         </Typography>
                         {character?.voice_actors.length > 0 ? (
-                            <Stack spacing={1} direction="column">
+                            <Stack spacing={1} direction="column" sx={{marginTop: "2px !important"}}>
                                 {character.voice_actors.map((va) => (
                                     <Stack
                                         key={va.person.mal_id}
@@ -174,6 +178,9 @@ export default function ModalCharacters({open, handleClose, character}: ModalPro
                                                 fontWeight: "bold",
                                                 fontFamily: "var(--ffamily)",
                                                 textAlign: { xs: 'center', sm: 'left' },
+                                                "@media (max-width: 599px)": {
+                                                    display: "none"
+                                                }
                                             }}
                                         >
                                             {va.person.name} ({va.language})

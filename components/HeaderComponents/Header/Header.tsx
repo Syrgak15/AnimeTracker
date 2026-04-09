@@ -11,6 +11,7 @@ export default function Header() {
     const scrollDirection = useScrollDirection();
     const headerLinks = [
         { name: 'Producers', href: '/producers' },
+        { name: 'FAQ', href: '/faq'},
     ]
     return (
         <div className={`header scroll-${scrollDirection}`}>

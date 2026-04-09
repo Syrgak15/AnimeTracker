@@ -8,6 +8,7 @@ import WhatshotIcon from "@mui/icons-material/Whatshot";
 import Grid from "@/components/MUI-components/Grid/Grid";
 import Box from '@mui/material/Box';
 import Tabs from "@/components/MainPageComponents/Tabs/Tabs";
+import NotFound from "@/components/MainPageComponents/NotFound/NotFound";
 
 
 interface AnimeListProps {
@@ -113,7 +114,7 @@ export default function CustomizedInputBase({ animeLists, limitedAnimeLists }: A
                             }
                         />
                     ) : (
-                        <span>No anime found matching your search.</span>
+                        <NotFound target={"anime"}/>
                     ) }
                 </div>
         </div>
